@@ -4,6 +4,16 @@ spark: true
 
 # Changelog — spark-base
 
+## [1.1.0] - 2026-04-15
+
+### Added
+
+- `spark-guide.agent.md` entra nel layer base come agente user-facing condiviso tra bootstrap iniziale e stack pacchetti.
+
+### Changed
+
+- Il pacchetto richiede `spark-framework-engine >= 2.1.0` per adottare in sicurezza `spark-guide` quando il file era gia' stato bootstrap-pato dal motore.
+
 ## [1.0.0] - 2026-04-15
 
 ### Added
