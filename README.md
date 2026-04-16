@@ -27,7 +27,7 @@ I plugin superiori si appoggiano a questo layer:
 
 ## Compatibilita
 
-- `spark-framework-engine` >= 1.9.0
+- `spark-framework-engine` >= 2.1.0
 - VS Code con GitHub Copilot
 
 ## Maintainer
