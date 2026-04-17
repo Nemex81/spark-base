@@ -24,6 +24,15 @@ Usano variabili di input con sintassi `${input:label}`.
 - `framework-changelog.prompt.md` — aggiunge voce a FRAMEWORK_CHANGELOG.md
 - `framework-release.prompt.md` — consolida [Unreleased] in una versione rilasciata
 - `framework-unlock.prompt.md` — sblocca temporaneamente i path protetti del framework
+- `scf-check-updates.prompt.md` — verifica aggiornamenti disponibili per i pacchetti SCF installati
+- `scf-install.prompt.md` — installa un pacchetto SCF con anteprima e conferma esplicita
+- `scf-list-available.prompt.md` — elenca i pacchetti SCF disponibili nel registry
+- `scf-list-installed.prompt.md` — mostra i pacchetti SCF installati nel workspace
+- `scf-package-info.prompt.md` — mostra il dettaglio di un pacchetto SCF specifico
+- `scf-pre-implementation-audit.prompt.md` — esegue un audit read-only prima di modifiche ecosistema
+- `scf-remove.prompt.md` — rimuove un pacchetto SCF installato con conferma esplicita
+- `scf-status.prompt.md` — riepiloga stato workspace e pacchetti SCF installati
+- `scf-update.prompt.md` — pianifica e applica aggiornamenti dei pacchetti SCF
 
 ## Note
 
@@ -31,4 +40,4 @@ Usano variabili di input con sintassi `${input:label}`.
 - I prompt `git-commit` e `git-merge` sono wrapper agent e delegano ad Agent-Git.
 - Il prompt `framework-unlock` abilita una finestra controllata di modifica
   dei componenti protetti del framework.
-- Documento di riferimento completo: [AGENTS.md](../AGENTS.md) sezione "Prompt Files".
+- Documento di riferimento: questo file per l'indice prompt e [AGENTS.md](../AGENTS.md) per l'indice agenti.
