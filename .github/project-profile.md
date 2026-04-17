@@ -1,7 +1,14 @@
 ---
-spark: true
 initialized: false
+scf_protected: true
+scf_file_role: "config"
+scf_merge_priority: 10
+scf_merge_strategy: "user_protected"
 active_plugins: []
+scf_version: "1.2.0"
+framework_edit_mode: false
+scf_owner: "spark-base"
+spark: true
 framework_version: ""
 ---
 

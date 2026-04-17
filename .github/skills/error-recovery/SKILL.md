@@ -1,7 +1,13 @@
 ---
-spark: true
-name: error-recovery
 description: Fornisce una procedura sintetica per classificare e recuperare errori operativi comuni.
+scf_protected: false
+scf_file_role: "skill"
+name: error-recovery
+scf_merge_priority: 10
+scf_merge_strategy: "replace"
+scf_version: "1.2.0"
+spark: true
+scf_owner: "spark-base"
 ---
 
 # error-recovery

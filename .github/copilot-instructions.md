@@ -1,5 +1,11 @@
 ---
 spark: true
+scf_file_role: "config"
+scf_version: "1.2.0"
+scf_merge_strategy: "merge_sections"
+scf_protected: false
+scf_owner: "spark-base"
+scf_merge_priority: 10
 ---
 
 # Copilot Instructions — spark-base

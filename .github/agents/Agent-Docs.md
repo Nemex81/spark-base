@@ -1,13 +1,19 @@
 ---
-spark: true
+scf_merge_strategy: "replace"
 name: Agent-Docs
+fallback: Agent-Research
 version: 1.0.0
-description: Dispatcher per sincronizzazione documentazione del progetto ospite tramite agenti plugin.
-model: ['GPT-5 mini (copilot)']
-layer: master
+scf_owner: "spark-base"
 role: dispatcher
 delegates_to_capabilities: [docs]
-fallback: Agent-Research
+scf_file_role: "agent"
+scf_version: "1.2.0"
+layer: master
+scf_merge_priority: 10
+scf_protected: false
+spark: true
+model: ['GPT-5 mini (copilot)']
+description: Dispatcher per sincronizzazione documentazione del progetto ospite tramite agenti plugin.
 ---
 
 # Agent-Docs

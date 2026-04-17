@@ -1,7 +1,13 @@
 ---
-spark: true
-name: conventional-commit
 description: Regole per costruire messaggi commit coerenti con Conventional Commits.
+scf_protected: false
+scf_file_role: "skill"
+name: conventional-commit
+scf_merge_priority: 10
+scf_merge_strategy: "replace"
+scf_version: "1.2.0"
+spark: true
+scf_owner: "spark-base"
 ---
 
 # conventional-commit

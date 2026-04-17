@@ -1,6 +1,13 @@
 ---
-agent: agent
 description: Avvia l'Agent-Orchestrator per gestire un task E2E completo.
+scf_protected: false
+scf_file_role: "prompt"
+scf_merge_priority: 10
+scf_merge_strategy: "replace"
+scf_version: "1.2.0"
+agent: agent
+spark: true
+scf_owner: "spark-base"
 ---
 
 Attiva Agent-Orchestrator per orchestrare il ciclo completo di sviluppo.

@@ -1,7 +1,13 @@
 ---
-spark: true
-name: framework-guard
 description: Definisce il blocco standard per modifiche ai componenti del framework SCF.
+scf_protected: false
+scf_file_role: "skill"
+name: framework-guard
+scf_merge_priority: 10
+scf_merge_strategy: "replace"
+scf_version: "1.2.0"
+spark: true
+scf_owner: "spark-base"
 ---
 
 # framework-guard

@@ -1,14 +1,14 @@
 ---
-agent: agent
-model:
-  - GPT-5 mini (copilot)
-  - GPT-5 mini (copilot)
 description: >
-  Setup iniziale del framework per il progetto corrente.
-  Raccoglie le informazioni fondamentali e genera
-  .github/project-profile.md come source of truth.
-  Eseguire PRIMA di qualsiasi altra operazione
-  su un nuovo progetto.
+model: 
+scf_protected: false
+scf_file_role: "prompt"
+scf_merge_priority: 10
+scf_merge_strategy: "replace"
+scf_version: "1.2.0"
+agent: agent
+spark: true
+scf_owner: "spark-base"
 ---
 
 # Project Setup — Inizializzazione Framework

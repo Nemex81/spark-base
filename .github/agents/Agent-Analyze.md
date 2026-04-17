@@ -1,13 +1,19 @@
 ---
-spark: true
+scf_merge_strategy: "replace"
 name: Agent-Analyze
+fallback: Agent-Research
 version: 1.0.0
-description: Dispatcher per analisi e discovery read-only con fallback controllato ad Agent-Research.
-model: ['Claude Sonnet 4.6 (copilot)', 'GPT-5.3-mini (copilot)']
-layer: master
+scf_owner: "spark-base"
 role: dispatcher
 delegates_to_capabilities: [analyze]
-fallback: Agent-Research
+scf_file_role: "agent"
+scf_version: "1.2.0"
+layer: master
+scf_merge_priority: 10
+scf_protected: false
+spark: true
+model: ['Claude Sonnet 4.6 (copilot)', 'GPT-5.3-mini (copilot)']
+description: Dispatcher per analisi e discovery read-only con fallback controllato ad Agent-Research.
 ---
 
 # Agent-Analyze

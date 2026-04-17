@@ -1,6 +1,13 @@
 ---
-agent: agent
 description: Aggiunge una voce al FRAMEWORK_CHANGELOG.md sezione [Unreleased].
+scf_protected: false
+scf_file_role: "prompt"
+scf_merge_priority: 10
+scf_merge_strategy: "replace"
+scf_version: "1.2.0"
+agent: agent
+spark: true
+scf_owner: "spark-base"
 ---
 
 # Framework Changelog Update

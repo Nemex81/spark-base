@@ -1,7 +1,13 @@
 ---
-spark: true
-name: framework-index
 description: Catalogo navigabile di agenti, skill, instruction e runtime MCP installati nel framework.
+scf_protected: false
+scf_file_role: "skill"
+name: framework-index
+scf_merge_priority: 10
+scf_merge_strategy: "replace"
+scf_version: "1.2.0"
+spark: true
+scf_owner: "spark-base"
 ---
 
 # framework-index
