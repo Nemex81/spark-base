@@ -35,6 +35,12 @@ Questo layer richiede `spark-framework-engine >= 1.9.0`; i tool e le resource ru
 
 Quando il task tocca tool MCP o codice engine, mantieni separati `stdout` e `stderr` e verifica che i tool pubblici siano registrati con il decorator corretto.
 
+## Ownership e Update Policy
+
+- `copilot-instructions.md` di questo pacchetto e' un file condiviso con `scf_merge_strategy: merge_sections`: le modifiche devono preservare le sezioni degli altri owner.
+- Il comportamento di installazione e update del workspace e' governato dai tool engine `scf_get_update_policy()` e `scf_set_update_policy(...)` e dal parametro `update_mode` dei tool pubblici.
+- Se il motore restituisce `authorization_required` o `action_required`, il flusso corretto e' completare quel passaggio prima di promettere scritture sotto `.github/`.
+
 ## Routing degli agenti
 
 - Agenti executor base: orchestrazione, git, release, framework docs, onboarding, ricerca.
