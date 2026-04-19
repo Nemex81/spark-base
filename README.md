@@ -4,10 +4,11 @@ Layer fondazionale del SPARK Code Framework.
 
 Questo repository contiene i componenti general-purpose condivisi tra i plugin SCF:
 
-- 11 agenti base per orchestrazione, validazione, git, release, docs e ricerca
-- instruction trasversali comuni a qualsiasi progetto
-- skill condivise di framework, accessibilita, semver, changelog e governance
-- prompt framework riutilizzabili nel workspace utente
+- 12 agenti installabili (`11` agenti base piu `spark-guide.agent`)
+- 6 instruction trasversali comuni a qualsiasi progetto
+- 29 skill condivise di framework, accessibilita, semver, changelog e governance
+- 27 prompt utente piu `README.md` nella cartella `.github/prompts/`
+- 4 file di configurazione comuni, incluso `.github/copilot-instructions.md`
 
 ## Installazione
 
@@ -24,6 +25,8 @@ I plugin superiori si appoggiano a questo layer:
 
 - `scf-master-codecrafter` aggiunge design, code routing e context MCP
 - `scf-pycode-crafter` aggiunge agenti, instruction e reference Python-specifici
+
+Il manifest corrente del pacchetto e `package-manifest.json` schema `2.1`, versione `1.2.0`, con 79 file gestiti.
 
 ## Compatibilita
 
