@@ -1,9 +1,10 @@
 ---
-description: >
+type: prompt
+name: verbosity
+description: Aggiorna il campo verbosity del project profile con conferma esplicita.
 scf_protected: false
 scf_file_role: "prompt"
 scf_merge_priority: 10
-Per override temporaneo di sessione non usare questo prompt: 
 scf_version: "1.2.0"
 scf_merge_strategy: "replace"
 agent: agent

@@ -1,8 +1,9 @@
 ---
-description: >
+type: prompt
+name: start
+description: Riprende il primo task aperto in docs/TODO.md e lo delega ad Agent-Code.
 scf_protected: false
 scf_file_role: "prompt"
-name: Start / Riprendi Codifica
 scf_merge_priority: 10
 scf_merge_strategy: "replace"
 scf_version: "1.2.0"

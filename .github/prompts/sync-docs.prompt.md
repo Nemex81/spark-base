@@ -1,8 +1,9 @@
 ---
-description: >
+type: prompt
+name: sync-docs
+description: Avvia Agent-Docs per sincronizzare la documentazione del progetto.
 scf_protected: false
 scf_file_role: "prompt"
-name: Sync Documentazione
 scf_merge_priority: 10
 scf_merge_strategy: "replace"
 scf_version: "1.2.0"

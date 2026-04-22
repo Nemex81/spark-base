@@ -1,4 +1,7 @@
 ---
+type: prompt
+name: git-commit
+description: Coordina un commit git tramite Agent-Git con conferma esplicita sul push.
 spark: true
 scf_file_role: "prompt"
 scf_version: "1.2.0"
@@ -15,15 +18,6 @@ Parametro di modalità: richiesta inline all'utente al passo 1 (PUSH o NO).
 Riferimento policy: .github/instructions/git-policy.instructions.md
 Riferimento skill: .github/skills/git-execution.skill.md
 -->
-
----
-agent: agent
-description: >
-  Wrapper agent per operazioni di commit. Chiede se vuoi commit+push o solo
-  commit. Raccoglie contesto e delega ad Agent-Git per l'esecuzione.
-  Se Agent-Git non è disponibile, esegue fallback diretto via script Python.
-  Attivare con #git-commit o dal file picker. Indipendente dal ciclo agenti.
----
 
 # git-commit — Wrapper Agent
 

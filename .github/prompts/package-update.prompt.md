@@ -1,5 +1,7 @@
 ---
-description: >
+type: prompt
+name: package-update
+description: Coordina il controllo e l'applicazione degli aggiornamenti dei pacchetti SCF.
 scf_protected: false
 scf_file_role: "prompt"
 scf_merge_priority: 10

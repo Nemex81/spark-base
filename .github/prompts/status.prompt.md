@@ -1,8 +1,9 @@
 ---
-description: >
+type: prompt
+name: status
+description: Riepiloga lo stato del workflow progetto e il prossimo passo consigliato.
 scf_protected: false
 scf_file_role: "prompt"
-name: Status Check
 scf_merge_priority: 10
 scf_merge_strategy: "replace"
 scf_version: "1.2.0"

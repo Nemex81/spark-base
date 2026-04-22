@@ -1,8 +1,9 @@
 ---
-description: >
+type: prompt
+name: release
+description: Avvia Agent-Release per preparare una release del progetto.
 scf_protected: false
 scf_file_role: "prompt"
-name: Release
 scf_merge_priority: 10
 scf_merge_strategy: "replace"
 scf_version: "1.2.0"

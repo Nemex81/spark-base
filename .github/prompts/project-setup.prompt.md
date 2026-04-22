@@ -1,5 +1,7 @@
 ---
-description: >
+type: prompt
+name: project-setup
+description: Avvia il setup iniziale del profilo progetto tramite Agent-Welcome.
 model: 
 scf_protected: false
 scf_file_role: "prompt"

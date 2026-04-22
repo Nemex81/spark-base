@@ -1,8 +1,9 @@
 ---
-description: >
+type: prompt
+name: help
+description: Spiega ruolo, responsabilita e workflow di un agente del framework.
 scf_protected: false
 scf_file_role: "prompt"
-name: Help Agente
 scf_merge_priority: 10
 scf_merge_strategy: "replace"
 scf_version: "1.2.0"

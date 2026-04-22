@@ -1,4 +1,6 @@
 ---
+type: prompt
+name: framework-update
 description: Aggiorna il Framework Copilot dopo aggiunta o modifica di agenti/prompt.
 scf_protected: false
 scf_file_role: "prompt"

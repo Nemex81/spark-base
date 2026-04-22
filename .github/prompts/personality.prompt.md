@@ -1,11 +1,12 @@
 ---
-description: >
+type: prompt
+name: personality
+description: Aggiorna il campo personality del project profile con conferma esplicita.
 scf_protected: false
 scf_file_role: "prompt"
 scf_merge_priority: 10
 scf_merge_strategy: "replace"
 scf_version: "1.2.0"
-sessione non usare questo prompt: dichiara il profilo desiderato
 agent: agent
 spark: true
 scf_owner: "spark-base"

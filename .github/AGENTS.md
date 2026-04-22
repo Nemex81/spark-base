@@ -12,6 +12,7 @@ scf_merge_priority: 10
 
 ## Base Agents (spark-base)
 
+- spark-assistant — executor — workspace entrypoint, onboarding, package lifecycle, diagnostics
 - spark-guide — executor — user entrypoint, framework orientation, routing to spark-assistant
 - Agent-Orchestrator — executor — orchestration, workflow, runtime-state
 - Agent-Git — executor — git, commit, push, merge, tag proposal

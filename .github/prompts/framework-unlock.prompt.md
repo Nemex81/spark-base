@@ -1,4 +1,6 @@
 ---
+type: prompt
+name: framework-unlock
 description: Sblocca temporaneamente i path protetti del framework per una modifica dichiarata e circoscritta.
 scf_protected: false
 scf_file_role: "prompt"

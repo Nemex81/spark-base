@@ -1,5 +1,7 @@
 ---
-description: >
+type: prompt
+name: project-update
+description: Aggiorna il profilo progetto tramite Agent-Welcome.
 model: 
 argument-hint: "update_request — Cosa vuoi aggiornare nel profilo progetto? (opzionale — lascia vuoto per vedere il help)"
 scf_file_role: "prompt"

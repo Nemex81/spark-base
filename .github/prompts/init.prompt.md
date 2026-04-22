@@ -1,8 +1,9 @@
 ---
-description: >
+type: prompt
+name: init
+description: Analizza un task e suggerisce l'agente piu adatto per iniziarlo.
 scf_protected: false
 scf_file_role: "prompt"
-name: Init Task
 scf_merge_priority: 10
 scf_merge_strategy: "replace"
 scf_version: "1.2.0"

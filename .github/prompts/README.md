@@ -37,10 +37,12 @@ Usano variabili di input con sintassi `${input:label}`.
 - `scf-install.prompt.md` — installa un pacchetto SCF con anteprima e conferma esplicita
 - `scf-list-available.prompt.md` — elenca i pacchetti SCF disponibili nel registry
 - `scf-list-installed.prompt.md` — mostra i pacchetti SCF installati nel workspace
+- `scf-migrate-workspace.prompt.md` — guida la migrazione di workspace legacy verso policy update e marker SCF
 - `scf-package-info.prompt.md` — mostra il dettaglio di un pacchetto SCF specifico
 - `scf-pre-implementation-audit.prompt.md` — esegue un audit read-only prima di modifiche ecosistema
 - `scf-remove.prompt.md` — rimuove un pacchetto SCF installato con conferma esplicita
 - `scf-status.prompt.md` — riepiloga stato workspace e pacchetti SCF installati
+- `scf-update-policy.prompt.md` — mostra o aggiorna la policy update del workspace SCF
 - `scf-update.prompt.md` — pianifica e applica aggiornamenti dei pacchetti SCF
 
 ## Note

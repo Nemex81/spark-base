@@ -1,4 +1,6 @@
 ---
+type: prompt
+name: orchestrate
 description: Avvia l'Agent-Orchestrator per gestire un task E2E completo.
 scf_protected: false
 scf_file_role: "prompt"

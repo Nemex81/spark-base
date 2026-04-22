@@ -10,6 +10,17 @@ scf_merge_priority: 10
 
 # Changelog — spark-base
 
+## [Unreleased]
+
+### Added
+
+- `spark-assistant.agent.md` e `spark-assistant-guide.instructions.md` entrano nel layer base cosi il bootstrap standalone installa entrambi gli agenti user-facing direttamente da `spark-base`.
+- I prompt `scf-migrate-workspace` e `scf-update-policy` entrano nel pacchetto base per riflettere le capability ownership-aware e policy-aware del motore corrente.
+
+### Fixed
+
+- Normalizzato il frontmatter dei prompt general-purpose del pacchetto base (`type`, `name`, `description`) per compatibilita con il picker prompt di VS Code e con la validazione SCF.
+
 ## [1.2.0] - 2026-04-16
 
 ### Added

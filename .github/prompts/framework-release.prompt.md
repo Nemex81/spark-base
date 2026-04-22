@@ -1,4 +1,8 @@
 ---
+type: prompt
+name: framework-release
+description: Consolida [Unreleased] in una versione rilasciata del framework.
+agent: agent
 spark: true
 scf_file_role: "prompt"
 scf_version: "1.2.0"
@@ -6,45 +10,6 @@ scf_merge_strategy: "replace"
 scf_protected: false
 scf_owner: "spark-base"
 scf_merge_priority: 10
----
-versione: vX.Y.Z
-parole_chiave:
-  - RELEASE
-
-descrizione: |
-  Prompt per l'operazione di release del framework. Obiettivo: consolidare la
-  sezione `[Unreleased]` presente in `.github/FRAMEWORK_CHANGELOG.md` in una
-  nuova voce di release `X.Y.Z` datata alla data attuale. Questo prompt è
-  pensato per l'agente `Agent-Release` o per l'operatore umano che esegue la
-  release.
-
-istruzioni: |
-  1. Apri `.github/FRAMEWORK_CHANGELOG.md` e individua la sezione `## [Unreleased]`.
-  2. Se la sezione contiene contenuti, sposta tutto il contenuto sotto una nuova
-    intestazione `## [X.Y.Z] - YYYY-MM-DD` mantenendo la formattazione delle
-     sottosezioni (Added, Changed, Fixed, ecc.). Rimuovi la sezione `[Unreleased]`
-     oppure lascia una intestazione vuota se preferito dal maintainer.
-    3. Aggiorna i metadati rilevanti in `.github/AGENTS.md` e `.github/copilot-instructions.md`
-      sostituendo eventuali riferimenti a `v1.5.1` precedenti o a `[Unreleased]` con
-     la nuova versione quando applicabile.
-  4. Non eseguire operazioni git automaticamente: lascia i cambiamenti pronti per
-     la review e commit da parte del maintainer. Includi nel messaggio di commit
-    la riga `chore(framework): release v1.5.1` (conventional-commit).
-
-note_operatore: |
-  - Verifica che il contenuto spostato non introduca duplicati o conflitti di
-    formattazione nel changelog.
-  - Se sono presenti voci collegate nelle note di rilascio del progetto, ricordarsi
-    di aggiornare anche gli altri file di documentazione se necessario.
-
-output_atteso: |
-  - `.github/FRAMEWORK_CHANGELOG.md` con una nuova sezione `## [v1.5.1] - 2026-03-22`
-    contenente il contenuto precedentemente sotto `[Unreleased]`.
-  - Modifiche preparate in `.github/AGENTS.md` e `.github/copilot-instructions.md`
-    se applicabili.
----
-agent: agent
-description: Consolida [Unreleased] in una versione rilasciata del framework.
 ---
 
 # Framework Release

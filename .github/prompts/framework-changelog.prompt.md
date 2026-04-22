@@ -1,4 +1,6 @@
 ---
+type: prompt
+name: framework-changelog
 description: Aggiunge una voce al FRAMEWORK_CHANGELOG.md sezione [Unreleased].
 scf_protected: false
 scf_file_role: "prompt"
