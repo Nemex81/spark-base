@@ -1,27 +1,47 @@
-﻿---
+---
 spark: true
-scf_owner: "spark-base"
-scf_version: "engine-managed"
-scf_file_role: "skill"
-scf_merge_strategy: "replace"
-scf_merge_priority: 10
-scf_protected: false
-description: Regole per costruire messaggi commit coerenti con Conventional Commits.
 name: conventional-commit
+description: Regole Conventional Commits per il progetto. Richiamabile da Agent-Code,
+  git-commit.prompt.md e git-merge.prompt.md per garantire commit atomici e coerenti.
 ---
 
+# Skill: Conventional Commit
 
-# conventional-commit
+## Formato obbligatorio
 
-Formato: `tipo(scope): descrizione`.
+```text
+<type>(<scope>): <subject>
+```
 
-Tipi consigliati:
+Soggetto: imperativo, minuscolo, max 72 caratteri, no punto finale.
 
-- `feat`
-- `fix`
-- `docs`
-- `refactor`
-- `test`
-- `chore`
+## Types consentiti
 
-Scope: usare componente o area principale toccata.
+- `feat`: nuova funzionalità
+- `fix`: correzione bug
+- `docs`: solo documentazione
+- `refactor`: refactoring senza cambio funzionale
+- `test`: aggiunta o modifica test
+- `chore`: manutenzione (dipendenze, config, CI)
+
+## Scopes consentiti
+
+- `domain`, `application`, `infrastructure`, `presentation`
+- `docs`, `tests`, `scripts`, `ci`, `framework`
+
+## Regole atomicità
+
+- Un commit = una modifica logica coesa
+- Non mescolare fix e feat nello stesso commit
+- Ogni commit deve essere compilabile e testabile da solo
+- Se il commit chiude un TODO item, specificarlo nel body:
+  `Closes TODO: <descrizione item>`
+
+## Esempi corretti
+
+```text
+feat(domain): aggiungi CardStack con metodo shuffle
+fix(presentation): correggi focus su dialog profilo alla chiusura
+docs(framework): aggiorna AGENTS.md con Agent-FrameworkDocs
+chore(ci): aggiorna soglia coverage a 85%
+```

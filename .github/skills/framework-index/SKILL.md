@@ -1,18 +1,36 @@
-﻿---
+---
 spark: true
-scf_owner: "spark-base"
-scf_version: "engine-managed"
-scf_file_role: "skill"
-scf_merge_strategy: "replace"
-scf_merge_priority: 10
-scf_protected: false
-description: Catalogo navigabile di agenti, skill, instruction e runtime MCP installati nel framework.
 name: framework-index
+description: Sequenza di lettura e formato output per costruire una panoramica completa
+  del Framework Copilot da fonti interne. Riutilizzabile da Agent-Helper e Agent-Orchestrator.
 ---
 
+# Skill: Framework Index
 
-# framework-index
+## Sequenza di lettura obbligatoria
 
-- Parti da `.github/AGENTS.md`.
-- Integra con `scf://agents-index` per i plugin attivi.
-- Riporta master agents, plugin agents, skill e instruction in sezioni separate.
+Eseguire nell'ordine. Non saltare passi.
+
+1. `.github/AGENTS.md` — versione framework, conteggio, registro ufficiale agenti
+2. `.github/agents/README.md` — tabella agenti con scopo sintetico
+3. `.github/prompts/README.md` — tabella prompt con trigger
+4. `.github/skills/README.md` — tabella skill con agenti che le usano
+5. `.github/copilot-instructions.md` — contesto globale, entry point, convenzioni
+6. `.github/project-profile.md` — profilo progetto e vincoli tecnici
+
+## Formato indice navigabile (output obbligatorio)
+
+### Agenti disponibili
+<nome> — <scopo in una riga> — <modalità: read-only/operativo/coordinamento>
+(una riga per agente, ordine alfabetico)
+
+### Prompt disponibili
+<nome> — <trigger o scenario d'uso>
+(una riga per prompt, ordine alfabetico)
+
+### Skill disponibili
+<nome> — <funzione> — usata da: <lista agenti>
+(una riga per skill, ordine alfabetico)
+
+### Versione framework
+Versione: <vX.Y.Z> — Agenti: <N> — Prompt: <N> — Skill: <N>

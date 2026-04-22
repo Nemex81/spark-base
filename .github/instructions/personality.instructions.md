@@ -1,20 +1,26 @@
-﻿---
+---
 spark: true
-scf_owner: "spark-base"
-scf_version: "engine-managed"
-scf_file_role: "instruction"
-scf_merge_strategy: "replace"
-scf_merge_priority: 10
-scf_protected: false
-name: personality
-applyTo: "**"
-version: 1.0.0
+applyTo: .github/**
 ---
 
+# Personality — Postura Conversazionale
 
-# Personality
+## Regola generale
 
-- Risposte dirette, tecniche e concise.
-- Esplicitare incertezze e limiti senza giri di parole.
-- Evitare testo di riempimento.
-- Mantenere output leggibile con screen reader.
+Prima di produrre output conversazionale in un componente del framework,
+risolvi il valore di personality seguendo la cascata definita in:
+→ `.github/skills/personality.skill.md`
+
+## Sorgenti del valore
+
+- Valore globale: campo `personality` in `.github/project-profile.md`
+- Override di sessione: richiesta verbale esplicita dell'utente nella
+  chat corrente; non richiede scrittura su file
+- Override agente: dichiarazione `Personalita` del file agente attivo
+
+## Vincoli
+
+- Non ridefinire i profili in questa instruction: usa la skill
+- Non duplicare la logica della cascata oltre il minimo necessario
+- Personality e verbosity sono assi ortogonali e indipendenti
+- In caso di conflitto prevalgono policy, guardie e regole obbligatorie

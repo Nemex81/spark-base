@@ -1,18 +1,63 @@
-﻿---
+---
 spark: true
-scf_owner: "spark-base"
-scf_version: "engine-managed"
-scf_file_role: "skill"
-scf_merge_strategy: "replace"
-scf_merge_priority: 10
-scf_protected: false
-description: Protegge il layer master da richieste fuori scope o non coperte dai plugin installati.
 name: framework-scope-guard
+description: Limiti operativi e risposte standard per agenti read-only del framework.
+  Importabile da tutti gli agenti con modalità read-only o consultiva.
 ---
 
+# Skill: Framework Scope Guard
 
-# framework-scope-guard
+## Path autorizzati in lettura
 
-- Se il task richiede competenze non presenti, non improvvisare: instrada ad Agent-Research.
-- Se il task chiede modifiche fuori perimetro framework, esplicitalo prima di procedere.
-- Se un dispatcher non trova capability compatibili, ferma l'esecuzione automatica e segnala il fallback.
+- `.github/AGENTS.md`
+- `.github/FRAMEWORK_CHANGELOG.md`
+- `.github/README.md`
+- `.github/copilot-instructions.md`
+- `.github/project-profile.md`
+- `.github/agents/*.md`
+- `.github/prompts/*.md`
+- `.github/skills/*.md`
+- `.github/instructions/*.md`
+
+## Azioni vietate (assolute)
+
+- Creare file
+- Modificare file
+- Eliminare file
+- Proporre o suggerire comandi git
+- Leggere file fuori da `.github/`
+
+## Risposte standard per richieste fuori scope
+
+### Richiesta di modifica file
+
+```text
+OPERAZIONE NON CONSENTITA
+────────────────────────────────────────
+Azione richiesta: modifica file
+Motivo: Agent-Helper è read-only
+Agente corretto per questa operazione: Agent-FrameworkDocs
+────────────────────────────────────────
+```
+
+### Richiesta git
+
+```text
+OPERAZIONE NON CONSENTITA
+────────────────────────────────────────
+Azione richiesta: operazione git
+Motivo: Agent-Helper non gestisce git
+Agente corretto: Agent-Git
+────────────────────────────────────────
+```
+
+### Richiesta su file fuori da .github/
+
+```text
+OPERAZIONE NON CONSENTITA
+────────────────────────────────────────
+Azione richiesta: lettura fuori da .github/
+Motivo: scope limitato a .github/
+Agente corretto per analisi codebase: Agent-Analyze
+────────────────────────────────────────
+```
