@@ -1,16 +1,32 @@
 ﻿---
-applyTo: "**"
-name: workflow-standard
-hosted_by: engine
-mcp_resource: "engine-instructions://workflow-standard"
-scf_file_role: "instruction"
+spark: true
 scf_owner: "spark-base"
 scf_version: "engine-managed"
+scf_file_role: "instruction"
 scf_merge_strategy: "replace"
 scf_merge_priority: 10
 scf_protected: false
-spark: true
+name: workflow-standard
+applyTo: "**"
+version: 1.0.0
 ---
-# workflow-standard (stub)
-Questo asset e' gestito centralmente dall'engine SPARK.
-Richiedilo via MCP con la resource: `engine-instructions://workflow-standard`.
+
+
+# Workflow Standard
+
+## Sequenza
+
+1. Analyze
+2. Design
+3. Plan
+4. Code
+5. Validate
+6. Docs
+7. Release
+
+## Regole
+
+- Ogni fase deve avere un criterio di uscita verificabile.
+- Non passare alla fase successiva se la validazione locale fallisce.
+- Aggiorna `docs/TODO.md` dopo ogni fase implementativa.
+- Se manca una capability plugin, usa il fallback Agent-Research e segnala il gap.

@@ -1,15 +1,22 @@
 ﻿---
-name: verbosity
-hosted_by: engine
-mcp_resource: "engine-skills://verbosity"
-scf_file_role: "skill"
+spark: true
 scf_owner: "spark-base"
 scf_version: "engine-managed"
+scf_file_role: "skill"
 scf_merge_strategy: "replace"
 scf_merge_priority: 10
 scf_protected: false
-spark: true
+description: Definisce i livelli di verbosita disponibili e quando applicarli.
+name: verbosity
 ---
-# verbosity (stub)
-Questo asset e' gestito centralmente dall'engine SPARK.
-Richiedilo via MCP con la resource: `engine-skills://verbosity`.
+
+
+# verbosity
+
+Livelli supportati:
+
+- `standard`
+- `collaborator`
+- `nerd`
+
+Il default e `standard`; aumentare solo quando il task lo richiede.

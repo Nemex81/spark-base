@@ -1,7 +1,7 @@
 {
     "schema_version":  "2.1",
     "package":  "spark-base",
-    "version":  "1.3.0",
+    "version":  "1.4.0",
     "display_name":  "SPARK Base Layer",
     "description":  "Layer fondazionale SCF con agenti base, skill condivise, instruction comuni e prompt framework general-purpose.",
     "author":  "Nemex81",
@@ -35,6 +35,7 @@
                   ".github/instructions/git-policy.instructions.md",
                   ".github/instructions/model-policy.instructions.md",
                   ".github/instructions/personality.instructions.md",
+                  ".github/instructions/project-reset.instructions.md",
                   ".github/instructions/spark-assistant-guide.instructions.md",
                   ".github/instructions/verbosity.instructions.md",
                   ".github/instructions/workflow-standard.instructions.md",
@@ -107,7 +108,7 @@
                            {
                                "path":  ".github/agents/Agent-Analyze.md",
                                "scf_owner":  "spark-base",
-                               "scf_version":  "1.3.0",
+                               "scf_version":  "1.4.0",
                                "scf_file_role":  "agent",
                                "scf_merge_strategy":  "replace",
                                "scf_merge_priority":  10,
@@ -116,7 +117,7 @@
                            {
                                "path":  ".github/agents/Agent-Docs.md",
                                "scf_owner":  "spark-base",
-                               "scf_version":  "1.3.0",
+                               "scf_version":  "1.4.0",
                                "scf_file_role":  "agent",
                                "scf_merge_strategy":  "replace",
                                "scf_merge_priority":  10,
@@ -125,7 +126,7 @@
                            {
                                "path":  ".github/agents/Agent-FrameworkDocs.md",
                                "scf_owner":  "spark-base",
-                               "scf_version":  "1.3.0",
+                               "scf_version":  "1.4.0",
                                "scf_file_role":  "agent",
                                "scf_merge_strategy":  "replace",
                                "scf_merge_priority":  10,
@@ -134,7 +135,7 @@
                            {
                                "path":  ".github/agents/Agent-Git.md",
                                "scf_owner":  "spark-base",
-                               "scf_version":  "1.3.0",
+                               "scf_version":  "1.4.0",
                                "scf_file_role":  "agent",
                                "scf_merge_strategy":  "replace",
                                "scf_merge_priority":  10,
@@ -143,7 +144,7 @@
                            {
                                "path":  ".github/agents/Agent-Helper.md",
                                "scf_owner":  "spark-base",
-                               "scf_version":  "1.3.0",
+                               "scf_version":  "1.4.0",
                                "scf_file_role":  "agent",
                                "scf_merge_strategy":  "replace",
                                "scf_merge_priority":  10,
@@ -152,7 +153,7 @@
                            {
                                "path":  ".github/agents/Agent-Orchestrator.md",
                                "scf_owner":  "spark-base",
-                               "scf_version":  "1.3.0",
+                               "scf_version":  "1.4.0",
                                "scf_file_role":  "agent",
                                "scf_merge_strategy":  "replace",
                                "scf_merge_priority":  10,
@@ -161,7 +162,7 @@
                            {
                                "path":  ".github/agents/Agent-Plan.md",
                                "scf_owner":  "spark-base",
-                               "scf_version":  "1.3.0",
+                               "scf_version":  "1.4.0",
                                "scf_file_role":  "agent",
                                "scf_merge_strategy":  "replace",
                                "scf_merge_priority":  10,
@@ -170,7 +171,7 @@
                            {
                                "path":  ".github/agents/Agent-Release.md",
                                "scf_owner":  "spark-base",
-                               "scf_version":  "1.3.0",
+                               "scf_version":  "1.4.0",
                                "scf_file_role":  "agent",
                                "scf_merge_strategy":  "replace",
                                "scf_merge_priority":  10,
@@ -188,7 +189,7 @@
                            {
                                "path":  ".github/agents/Agent-Validate.md",
                                "scf_owner":  "spark-base",
-                               "scf_version":  "1.3.0",
+                               "scf_version":  "1.4.0",
                                "scf_file_role":  "agent",
                                "scf_merge_strategy":  "replace",
                                "scf_merge_priority":  10,
@@ -197,7 +198,7 @@
                            {
                                "path":  ".github/agents/Agent-Welcome.md",
                                "scf_owner":  "spark-base",
-                               "scf_version":  "1.3.0",
+                               "scf_version":  "1.4.0",
                                "scf_file_role":  "agent",
                                "scf_merge_strategy":  "replace",
                                "scf_merge_priority":  10,
@@ -206,7 +207,7 @@
                            {
                                "path":  ".github/agents/spark-assistant.agent.md",
                                "scf_owner":  "spark-base",
-                               "scf_version":  "1.3.0",
+                               "scf_version":  "1.4.0",
                                "scf_file_role":  "agent",
                                "scf_merge_strategy":  "replace",
                                "scf_merge_priority":  10,
@@ -224,7 +225,7 @@
                            {
                                "path":  ".github/changelogs/spark-base.md",
                                "scf_owner":  "spark-base",
-                               "scf_version":  "1.3.0",
+                               "scf_version":  "1.4.0",
                                "scf_file_role":  "config",
                                "scf_merge_strategy":  "replace",
                                "scf_merge_priority":  10,
@@ -233,7 +234,7 @@
                            {
                                "path":  ".github/copilot-instructions.md",
                                "scf_owner":  "spark-base",
-                               "scf_version":  "1.3.0",
+                               "scf_version":  "1.4.0",
                                "scf_file_role":  "config",
                                "scf_merge_strategy":  "merge_sections",
                                "scf_merge_priority":  10,
@@ -270,6 +271,15 @@
                                "path":  ".github/instructions/personality.instructions.md",
                                "scf_owner":  "spark-base",
                                "scf_version":  "engine-managed",
+                               "scf_file_role":  "instruction",
+                               "scf_merge_strategy":  "replace",
+                               "scf_merge_priority":  10,
+                               "scf_protected":  false
+                           },
+                           {
+                               "path":  ".github/instructions/project-reset.instructions.md",
+                               "scf_owner":  "spark-base",
+                               "scf_version":  "1.4.0",
                                "scf_file_role":  "instruction",
                                "scf_merge_strategy":  "replace",
                                "scf_merge_priority":  10,
@@ -701,7 +711,7 @@
                            {
                                "path":  ".github/skills/project-doc-bootstrap/SKILL.md",
                                "scf_owner":  "spark-base",
-                               "scf_version":  "1.3.0",
+                               "scf_version":  "1.4.0",
                                "scf_file_role":  "skill",
                                "scf_merge_strategy":  "replace",
                                "scf_merge_priority":  10,
@@ -719,7 +729,7 @@
                            {
                                "path":  ".github/skills/project-profile.skill.md",
                                "scf_owner":  "spark-base",
-                               "scf_version":  "1.3.0",
+                               "scf_version":  "1.4.0",
                                "scf_file_role":  "skill",
                                "scf_merge_strategy":  "replace",
                                "scf_merge_priority":  10,
@@ -728,7 +738,7 @@
                            {
                                "path":  ".github/skills/project-reset.skill.md",
                                "scf_owner":  "spark-base",
-                               "scf_version":  "1.3.0",
+                               "scf_version":  "1.4.0",
                                "scf_file_role":  "skill",
                                "scf_merge_strategy":  "replace",
                                "scf_merge_priority":  10,

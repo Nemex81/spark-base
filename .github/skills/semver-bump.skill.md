@@ -1,15 +1,18 @@
 ﻿---
-name: semver-bump
-hosted_by: engine
-mcp_resource: "engine-skills://semver-bump"
-scf_file_role: "skill"
+spark: true
 scf_owner: "spark-base"
 scf_version: "engine-managed"
+scf_file_role: "skill"
 scf_merge_strategy: "replace"
 scf_merge_priority: 10
 scf_protected: false
-spark: true
+description: Criteri per scegliere bump patch, minor o major in base all'impatto della modifica.
+name: semver-bump
 ---
-# semver-bump (stub)
-Questo asset e' gestito centralmente dall'engine SPARK.
-Richiedilo via MCP con la resource: `engine-skills://semver-bump`.
+
+
+# semver-bump
+
+- patch: fix e manutenzione.
+- minor: nuove feature backward-compatible.
+- major: breaking change o contratti pubblici incompatibili.

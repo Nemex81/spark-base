@@ -7,7 +7,7 @@ scf_owner: "spark-base"
 role: dispatcher
 delegates_to_capabilities: [validate, test, lint]
 scf_file_role: "agent"
-scf_version: "1.2.0"
+scf_version: "1.4.0"
 layer: master
 scf_merge_priority: 10
 scf_protected: false

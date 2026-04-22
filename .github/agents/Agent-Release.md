@@ -5,7 +5,7 @@ scf_protected: false
 scf_owner: "spark-base"
 tools: 
 version: 1.0.0
-scf_version: "1.2.0"
+scf_version: "1.4.0"
 scf_file_role: "agent"
 layer: master
 scf_merge_priority: 10

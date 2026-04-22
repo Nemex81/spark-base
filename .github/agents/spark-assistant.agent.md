@@ -6,7 +6,7 @@ description: >
   Non interviene sul motore spark-framework-engine.
 spark: true
 scf_owner: "spark-base"
-scf_version: "1.2.0"
+scf_version: "1.4.0"
 scf_file_role: "agent"
 scf_merge_strategy: "replace"
 scf_merge_priority: 10

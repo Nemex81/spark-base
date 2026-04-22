@@ -5,7 +5,7 @@ scf_file_role: "skill"
 name: project-profile
 scf_merge_priority: 10
 scf_merge_strategy: "replace"
-scf_version: "1.2.0"
+scf_version: "1.4.0"
 spark: true
 scf_owner: "spark-base"
 ---
@@ -13,11 +13,13 @@ scf_owner: "spark-base"
 # project-profile
 
 Campi minimi:
+
 - `initialized`
 - `active_plugins`
 - `framework_version`
 
 Campi opzionali consigliati:
+
 - nome progetto
 - descrizione
 - stack e test runner

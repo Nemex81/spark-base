@@ -1,7 +1,7 @@
 ---
 spark: true
 scf_file_role: "config"
-scf_version: "1.3.0"
+scf_version: "1.4.0"
 scf_merge_strategy: "replace"
 scf_protected: false
 scf_owner: "spark-base"
@@ -9,6 +9,26 @@ scf_merge_priority: 10
 ---
 
 # Changelog — spark-base
+
+<!-- markdownlint-disable MD024 -->
+
+## [Unreleased]
+
+## [1.4.0] - 2026-04-22
+
+### Added
+
+- Nuova instruction contestuale `.github/instructions/project-reset.instructions.md` per governare in modo esplicito il reset di `.github/project-profile.md` con conferme, backup e guard rail di framework.
+
+### Changed
+
+- `package-manifest.json` aggiornato a `1.4.0` e riallineato ai file realmente distribuiti nel pacchetto base dopo la reidratazione dei contenuti framework richiesti in questo rilascio.
+- Gli asset base aggiornati nel ciclo `1.4.0` ora dichiarano `scf_version: "1.4.0"` dove appropriato, mentre skill e instruction engine-managed restano registrate come `engine-managed` nel manifest.
+- Le skill e instruction engine-managed continuano a richiedere `spark-framework-engine >= 2.4.0`, ma il pacchetto torna a distribuire contenuto locale completo invece di limitarsi agli stub leggeri introdotti nel `1.3.0`.
+
+### Notes
+
+- Le aggiunte che appartengono gia a layer superiori o ad altri package (`Agent-Design`, `mcp-context.instructions.md`, `code-routing`, `clean-architecture`, `docs-manager`) restano volutamente escluse da `spark-base` per evitare conflitti di ownership tra pacchetti.
 
 ## [1.3.0] - 2026-04-22
 
@@ -22,17 +42,6 @@ scf_merge_priority: 10
 
 - Retrocompatibilita: workspace su `spark-base@1.2.0` con file fisici pieni continuano a funzionare. La migrazione a stub avviene solo all'esecuzione esplicita di `scf_update_package("spark-base")`.
 - I 5 asset contestuali restano file fisici completi: `agent-selector.skill.md`, `project-doc-bootstrap/`, `project-profile.skill.md`, `project-reset.skill.md` (skill) + nessuna instruction contestuale in questo pacchetto dopo la delega (era solo `spark-assistant-guide` che e` stato classificato come delegabile).
-
-## [Unreleased]
-
-### Added
-
-- `spark-assistant.agent.md` e `spark-assistant-guide.instructions.md` entrano nel layer base cosi il bootstrap standalone installa entrambi gli agenti user-facing direttamente da `spark-base`.
-- I prompt `scf-migrate-workspace` e `scf-update-policy` entrano nel pacchetto base per riflettere le capability ownership-aware e policy-aware del motore corrente.
-
-### Fixed
-
-- Normalizzato il frontmatter dei prompt general-purpose del pacchetto base (`type`, `name`, `description`) per compatibilita con il picker prompt di VS Code e con la validazione SCF.
 
 ## [1.2.0] - 2026-04-16
 
