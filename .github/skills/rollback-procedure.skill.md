@@ -1,17 +1,15 @@
----
-description: Strategia di rollback dopo fallimenti post-commit o modifiche parziali non valide.
-scf_protected: false
-scf_file_role: "skill"
+﻿---
 name: rollback-procedure
-scf_merge_priority: 10
-scf_merge_strategy: "replace"
-scf_version: "1.2.0"
-spark: true
+hosted_by: engine
+mcp_resource: "engine-skills://rollback-procedure"
+scf_file_role: "skill"
 scf_owner: "spark-base"
+scf_version: "engine-managed"
+scf_merge_strategy: "replace"
+scf_merge_priority: 10
+scf_protected: false
+spark: true
 ---
-
-# rollback-procedure
-
-- Commit non pushato: preferisci reset soft tramite Agent-Git.
-- Commit gia pushato: preferisci revert tramite Agent-Git.
-- Dopo rollback, riapri la checklist TODO della fase interessata.
+# rollback-procedure (stub)
+Questo asset e' gestito centralmente dall'engine SPARK.
+Richiedilo via MCP con la resource: `engine-skills://rollback-procedure`.

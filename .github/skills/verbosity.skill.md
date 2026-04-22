@@ -1,20 +1,15 @@
----
-description: Definisce i livelli di verbosita disponibili e quando applicarli.
-scf_protected: false
-scf_file_role: "skill"
+﻿---
 name: verbosity
-scf_merge_priority: 10
-scf_merge_strategy: "replace"
-scf_version: "1.2.0"
-spark: true
+hosted_by: engine
+mcp_resource: "engine-skills://verbosity"
+scf_file_role: "skill"
 scf_owner: "spark-base"
+scf_version: "engine-managed"
+scf_merge_strategy: "replace"
+scf_merge_priority: 10
+scf_protected: false
+spark: true
 ---
-
-# verbosity
-
-Livelli supportati:
-- `standard`
-- `collaborator`
-- `nerd`
-
-Il default e `standard`; aumentare solo quando il task lo richiede.
+# verbosity (stub)
+Questo asset e' gestito centralmente dall'engine SPARK.
+Richiedilo via MCP con la resource: `engine-skills://verbosity`.

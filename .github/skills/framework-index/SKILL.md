@@ -1,17 +1,15 @@
----
-description: Catalogo navigabile di agenti, skill, instruction e runtime MCP installati nel framework.
-scf_protected: false
-scf_file_role: "skill"
+﻿---
 name: framework-index
-scf_merge_priority: 10
-scf_merge_strategy: "replace"
-scf_version: "1.2.0"
-spark: true
+hosted_by: engine
+mcp_resource: "engine-skills://framework-index"
+scf_file_role: "skill"
 scf_owner: "spark-base"
+scf_version: "engine-managed"
+scf_merge_strategy: "replace"
+scf_merge_priority: 10
+scf_protected: false
+spark: true
 ---
-
-# framework-index
-
-- Parti da `.github/AGENTS.md`.
-- Integra con `scf://agents-index` per i plugin attivi.
-- Riporta master agents, plugin agents, skill e instruction in sezioni separate.
+# framework-index (stub)
+Questo asset e' gestito centralmente dall'engine SPARK.
+Richiedilo via MCP con la resource: `engine-skills://framework-index`.

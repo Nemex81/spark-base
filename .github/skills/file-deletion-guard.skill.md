@@ -1,17 +1,15 @@
----
-description: Impone conferma esplicita e elenco impatti prima di eliminare file o directory.
-scf_protected: false
-scf_file_role: "skill"
+﻿---
 name: file-deletion-guard
-scf_merge_priority: 10
-scf_merge_strategy: "replace"
-scf_version: "1.2.0"
-spark: true
+hosted_by: engine
+mcp_resource: "engine-skills://file-deletion-guard"
+scf_file_role: "skill"
 scf_owner: "spark-base"
+scf_version: "engine-managed"
+scf_merge_strategy: "replace"
+scf_merge_priority: 10
+scf_protected: false
+spark: true
 ---
-
-# file-deletion-guard
-
-- Non eliminare file senza conferma utente esplicita.
-- Elenca sempre i path coinvolti e il motivo.
-- Se il file appartiene al framework, verifica anche il perimetro `framework-guard`.
+# file-deletion-guard (stub)
+Questo asset e' gestito centralmente dall'engine SPARK.
+Richiedilo via MCP con la resource: `engine-skills://file-deletion-guard`.

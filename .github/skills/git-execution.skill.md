@@ -1,33 +1,15 @@
----
-description: Matrice sintetica dei comandi git consentiti, vietati e delegati ad Agent-Git.
-scf_protected: false
-scf_file_role: "skill"
+﻿---
 name: git-execution
-scf_merge_priority: 10
-scf_merge_strategy: "replace"
-scf_version: "1.2.0"
-spark: true
+hosted_by: engine
+mcp_resource: "engine-skills://git-execution"
+scf_file_role: "skill"
 scf_owner: "spark-base"
+scf_version: "engine-managed"
+scf_merge_strategy: "replace"
+scf_merge_priority: 10
+scf_protected: false
+spark: true
 ---
-
-# git-execution
-
-## Consentiti read-only
-
-- `git status`
-- `git diff`
-- `git log`
-- `git show`
-
-## Consentiti solo via Agent-Git
-
-- `git commit`
-- `git push`
-- `git merge`
-- `git tag`
-
-## Vietati in autonomia
-
-- `git reset --hard`
-- `git rebase`
-- force push su branch condivisi
+# git-execution (stub)
+Questo asset e' gestito centralmente dall'engine SPARK.
+Richiedilo via MCP con la resource: `engine-skills://git-execution`.

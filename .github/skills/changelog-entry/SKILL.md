@@ -1,17 +1,15 @@
----
-description: Genera voci changelog coerenti con Keep a Changelog.
-scf_protected: false
-scf_file_role: "skill"
+﻿---
 name: changelog-entry
-scf_merge_priority: 10
-scf_merge_strategy: "replace"
-scf_version: "1.2.0"
-spark: true
+hosted_by: engine
+mcp_resource: "engine-skills://changelog-entry"
+scf_file_role: "skill"
 scf_owner: "spark-base"
+scf_version: "engine-managed"
+scf_merge_strategy: "replace"
+scf_merge_priority: 10
+scf_protected: false
+spark: true
 ---
-
-# changelog-entry
-
-- Usa sezioni `Added`, `Changed`, `Fixed`, `Removed`, `Notes` solo se necessarie.
-- Descrivi impatto utente o manutentivo in una riga per voce.
-- Inserisci la nuova entry in cima alla cronologia del package.
+# changelog-entry (stub)
+Questo asset e' gestito centralmente dall'engine SPARK.
+Richiedilo via MCP con la resource: `engine-skills://changelog-entry`.

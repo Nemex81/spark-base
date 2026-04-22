@@ -1,21 +1,15 @@
----
-description: Definisce le posture operative disponibili per gli agenti del framework.
-scf_protected: false
-scf_file_role: "skill"
+﻿---
 name: personality
-scf_merge_priority: 10
-scf_merge_strategy: "replace"
-scf_version: "1.2.0"
-spark: true
+hosted_by: engine
+mcp_resource: "engine-skills://personality"
+scf_file_role: "skill"
 scf_owner: "spark-base"
+scf_version: "engine-managed"
+scf_merge_strategy: "replace"
+scf_merge_priority: 10
+scf_protected: false
+spark: true
 ---
-
-# personality
-
-Profili supportati:
-- `mentor`
-- `pragmatico`
-- `reviewer`
-- `architect`
-
-Ogni agente puo ereditarli dal profilo progetto o dichiarare un default locale.
+# personality (stub)
+Questo asset e' gestito centralmente dall'engine SPARK.
+Richiedilo via MCP con la resource: `engine-skills://personality`.

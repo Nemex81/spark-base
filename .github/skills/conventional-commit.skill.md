@@ -1,25 +1,15 @@
----
-description: Regole per costruire messaggi commit coerenti con Conventional Commits.
-scf_protected: false
-scf_file_role: "skill"
+﻿---
 name: conventional-commit
-scf_merge_priority: 10
-scf_merge_strategy: "replace"
-scf_version: "1.2.0"
-spark: true
+hosted_by: engine
+mcp_resource: "engine-skills://conventional-commit"
+scf_file_role: "skill"
 scf_owner: "spark-base"
+scf_version: "engine-managed"
+scf_merge_strategy: "replace"
+scf_merge_priority: 10
+scf_protected: false
+spark: true
 ---
-
-# conventional-commit
-
-Formato: `tipo(scope): descrizione`.
-
-Tipi consigliati:
-- `feat`
-- `fix`
-- `docs`
-- `refactor`
-- `test`
-- `chore`
-
-Scope: usare componente o area principale toccata.
+# conventional-commit (stub)
+Questo asset e' gestito centralmente dall'engine SPARK.
+Richiedilo via MCP con la resource: `engine-skills://conventional-commit`.

@@ -1,17 +1,15 @@
----
-description: Imposta stile comunicativo e output del framework durante il bootstrap del progetto.
-scf_protected: false
-scf_file_role: "skill"
+﻿---
 name: style-setup
-scf_merge_priority: 10
-scf_merge_strategy: "replace"
-scf_version: "1.2.0"
-spark: true
+hosted_by: engine
+mcp_resource: "engine-skills://style-setup"
+scf_file_role: "skill"
 scf_owner: "spark-base"
+scf_version: "engine-managed"
+scf_merge_strategy: "replace"
+scf_merge_priority: 10
+scf_protected: false
+spark: true
 ---
-
-# style-setup
-
-- Definisci verbosity iniziale.
-- Definisci personality iniziale.
-- Mantieni coerenza tra project-profile e comportamento degli agenti.
+# style-setup (stub)
+Questo asset e' gestito centralmente dall'engine SPARK.
+Richiedilo via MCP con la resource: `engine-skills://style-setup`.

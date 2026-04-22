@@ -1,21 +1,16 @@
----
-scf_protected: false
-scf_file_role: "instruction"
-name: git-policy
+﻿---
 applyTo: "**"
-scf_merge_strategy: "replace"
-scf_version: "1.2.0"
-package: scf-master-codecrafter
-scf_merge_priority: 10
+name: git-policy
+hosted_by: engine
+mcp_resource: "engine-instructions://git-policy"
+scf_file_role: "instruction"
 scf_owner: "spark-base"
+scf_version: "engine-managed"
+scf_merge_strategy: "replace"
+scf_merge_priority: 10
+scf_protected: false
 spark: true
-version: 1.0.0
 ---
-
-# Git Policy
-
-- Fuori da Agent-Git, Copilot non esegue `git push`, `git merge`, `git commit`, `git rebase`.
-- Sono sempre consentiti i comandi read-only: `git status`, `git diff`, `git log`, `git show`, `git branch`.
-- I commit proposti devono seguire Conventional Commits.
-- Ogni push richiede conferma esplicita `PUSH`.
-- Ogni merge richiede conferma esplicita `MERGE`.
+# git-policy (stub)
+Questo asset e' gestito centralmente dall'engine SPARK.
+Richiedilo via MCP con la resource: `engine-instructions://git-policy`.

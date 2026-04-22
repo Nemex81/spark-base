@@ -1,34 +1,15 @@
----
-description: Template minimi per documenti DESIGN, PLAN e TODO del workflow SCF.
-scf_protected: false
-scf_file_role: "skill"
+﻿---
 name: document-template
-scf_merge_priority: 10
-scf_merge_strategy: "replace"
-scf_version: "1.2.0"
-spark: true
+hosted_by: engine
+mcp_resource: "engine-skills://document-template"
+scf_file_role: "skill"
 scf_owner: "spark-base"
+scf_version: "engine-managed"
+scf_merge_strategy: "replace"
+scf_merge_priority: 10
+scf_protected: false
+spark: true
 ---
-
-# document-template
-
-## DESIGN
-
-- titolo
-- contesto
-- decisione
-- trade-off
-- stato
-
-## PLAN
-
-- obiettivo
-- prerequisiti
-- fasi implementative
-- validazione
-
-## TODO
-
-- stato generale
-- checklist per fase
-- validazione finale
+# document-template (stub)
+Questo asset e' gestito centralmente dall'engine SPARK.
+Richiedilo via MCP con la resource: `engine-skills://document-template`.

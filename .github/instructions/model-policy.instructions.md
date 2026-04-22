@@ -1,21 +1,16 @@
----
-scf_protected: false
-scf_file_role: "instruction"
-name: model-policy
+﻿---
 applyTo: "**"
-scf_merge_strategy: "replace"
-scf_version: "1.2.0"
-package: scf-master-codecrafter
-scf_merge_priority: 10
+name: model-policy
+hosted_by: engine
+mcp_resource: "engine-instructions://model-policy"
+scf_file_role: "instruction"
 scf_owner: "spark-base"
+scf_version: "engine-managed"
+scf_merge_strategy: "replace"
+scf_merge_priority: 10
+scf_protected: false
 spark: true
-version: 1.0.0
 ---
-
-# Model Policy
-
-- Leggi il contesto reale prima di modificare file.
-- Non fare refactor non richiesti.
-- Se esistono piu approcci validi, dichiara il trade-off principale.
-- Le modifiche multi-file richiedono piano o checklist condivisa.
-- Gli agenti dispatcher non implementano direttamente: instradano o fanno fallback.
+# model-policy (stub)
+Questo asset e' gestito centralmente dall'engine SPARK.
+Richiedilo via MCP con la resource: `engine-instructions://model-policy`.

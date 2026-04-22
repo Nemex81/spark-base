@@ -1,7 +1,7 @@
 ---
 spark: true
 scf_file_role: "config"
-scf_version: "1.2.0"
+scf_version: "1.3.0"
 scf_merge_strategy: "replace"
 scf_protected: false
 scf_owner: "spark-base"
@@ -9,6 +9,19 @@ scf_merge_priority: 10
 ---
 
 # Changelog — spark-base
+
+## [1.3.0] - 2026-04-22
+
+### Changed
+
+- 19 skill universali e 7 instruction universali sostituite da **stub leggeri** che delegano il contenuto al motore SPARK tramite le nuove resource MCP `engine-skills://{name}` e `engine-instructions://{name}`. Elenco delegato in `engine_provided_skills` e `engine_provided_instructions` nel `package-manifest.json`.
+- Rimossi dal payload i subfolder `skills/changelog-entry/templates/`, `skills/error-recovery/reference/`, `skills/framework-query/reference/` e `skills/validate-accessibility/checklists/`: ora hostati integralmente dal motore.
+- `min_engine_version` alzato a `2.4.0` (dipendenza dai namespace `engine-*://` introdotti dall'engine 2.4.0).
+
+### Notes
+
+- Retrocompatibilita: workspace su `spark-base@1.2.0` con file fisici pieni continuano a funzionare. La migrazione a stub avviene solo all'esecuzione esplicita di `scf_update_package("spark-base")`.
+- I 5 asset contestuali restano file fisici completi: `agent-selector.skill.md`, `project-doc-bootstrap/`, `project-profile.skill.md`, `project-reset.skill.md` (skill) + nessuna instruction contestuale in questo pacchetto dopo la delega (era solo `spark-assistant-guide` che e` stato classificato come delegabile).
 
 ## [Unreleased]
 

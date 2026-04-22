@@ -1,17 +1,15 @@
----
-description: Checklist generale per output e interfacce navigabili da tastiera e screen reader.
-scf_protected: false
-scf_file_role: "skill"
+﻿---
 name: validate-accessibility
-scf_merge_priority: 10
-scf_merge_strategy: "replace"
-scf_version: "1.2.0"
-spark: true
+hosted_by: engine
+mcp_resource: "engine-skills://validate-accessibility"
+scf_file_role: "skill"
 scf_owner: "spark-base"
+scf_version: "engine-managed"
+scf_merge_strategy: "replace"
+scf_merge_priority: 10
+scf_protected: false
+spark: true
 ---
-
-# validate-accessibility
-
-- Verifica ordine logico di navigazione.
-- Verifica che ogni cambiamento di stato abbia una controparte testuale.
-- Evita feedback solo visivi o solo cromatici.
+# validate-accessibility (stub)
+Questo asset e' gestito centralmente dall'engine SPARK.
+Richiedilo via MCP con la resource: `engine-skills://validate-accessibility`.

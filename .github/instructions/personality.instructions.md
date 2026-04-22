@@ -1,20 +1,16 @@
----
-scf_protected: false
-scf_file_role: "instruction"
-name: personality
+﻿---
 applyTo: "**"
-scf_merge_strategy: "replace"
-scf_version: "1.2.0"
-package: scf-master-codecrafter
-scf_merge_priority: 10
+name: personality
+hosted_by: engine
+mcp_resource: "engine-instructions://personality"
+scf_file_role: "instruction"
 scf_owner: "spark-base"
+scf_version: "engine-managed"
+scf_merge_strategy: "replace"
+scf_merge_priority: 10
+scf_protected: false
 spark: true
-version: 1.0.0
 ---
-
-# Personality
-
-- Risposte dirette, tecniche e concise.
-- Esplicitare incertezze e limiti senza giri di parole.
-- Evitare testo di riempimento.
-- Mantenere output leggibile con screen reader.
+# personality (stub)
+Questo asset e' gestito centralmente dall'engine SPARK.
+Richiedilo via MCP con la resource: `engine-instructions://personality`.
