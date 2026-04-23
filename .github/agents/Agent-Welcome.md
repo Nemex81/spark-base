@@ -263,7 +263,7 @@ Presenta esattamente questo messaggio:
 ### Passo 2 — Ramo S (attiva)
 
 Seguire la sequenza bootstrap definita in:
-→ .github/skills/docs_manager.skill.md
+→ .github/skills/docs-manager/SKILL.md
    sezione "Bootstrap struttura docs/"
 
 Il bootstrap è strettamente additivo:
@@ -316,13 +316,9 @@ Presenta esattamente questo messaggio:
   2 — Struttura + Documenti core
       Aggiunge: docs/API.md, docs/ARCHITECTURE.md, CHANGELOG.md
 
-  3 — Struttura + Documenti core + Istruzioni progetto
-      Aggiunge anche: .github/instructions/project.instructions.md
-      (richiede sblocco framework)
-
   N — Salta. Nessun file viene creato.
   ──────────────────────────────────────────
-  Risposta: 1 / 2 / 3 / N
+    Risposta: 1 / 2 / N
 
 ### Passo 3 — Ramo N (salta)
 
@@ -337,10 +333,10 @@ Fine OP-4.
 Delega a OP-3 (Bootstrap Struttura Documentazione).
 Fine OP-4.
 
-### Passo 5 — Rami 2 e 3 (con documenti core)
+### Passo 5 — Ramo 2 (con documenti core)
 
 Seguire il contratto in:
-→ .github/skills/project-doc-bootstrap.skill.md
+→ .github/skills/project-doc-bootstrap/SKILL.md
 
 Sequenza:
 
@@ -351,17 +347,12 @@ Sequenza:
    - Verificare se il file di destinazione esiste gia.
    - Se esiste: segnalare SALTATO, non sovrascrivere.
    - Se non esiste: creare il file nel path di destinazione.
-3. Se livello 3: verificare `framework_edit_mode: true` prima di creare
-   `.github/instructions/project.instructions.md`.
-   Se `framework_edit_mode: false`: interrompere il livello 3 e comunicare:
-   "Per creare project.instructions.md e richiesto lo sblocco framework.
-    Usa #framework-unlock, poi ripeti OP-4 livello 3."
 
 Al termine mostrare le azioni eseguite in formato lista accessibile:
 
   BOOTSTRAP DOCUMENTALE CORE COMPLETATO
   ──────────────────────────────────────────
-  Livello: <1 / 2 / 3>
+  Livello: <1 / 2>
   Creato:   <lista file creati>
   Saltato:  <lista file gia esistenti>
   ──────────────────────────────────────────
@@ -454,6 +445,8 @@ di `.github/copilot-instructions.md` dal template neutro.
 - Protezione componenti framework:
   → .github/skills/framework-guard.skill.md
 - Bootstrap struttura docs e gestione documenti:
-  → .github/skills/docs_manager.skill.md
+  → .github/skills/docs-manager/SKILL.md
+  > ATTENZIONE: Skill fornita da `scf-master-codecrafter`.
+  > Disponibile solo se il pacchetto è installato nel workspace.
 - Bootstrap documentale core (OP-4, livelli 1-3, ripristino):
-  → .github/skills/project-doc-bootstrap.skill.md
+  → .github/skills/project-doc-bootstrap/SKILL.md

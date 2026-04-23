@@ -92,7 +92,9 @@ Agent-Docs:
 - **Logica SemVer** (regole bump MAJOR/MINOR/PATCH per proposta versione):
   → `.github/skills/semver-bump.skill.md`
 - **Gestione documenti** (path canonici, validazione struttura, coordinatore):
-  → `.github/skills/docs_manager.skill.md`
+  → `.github/skills/docs-manager/SKILL.md`
+  > ATTENZIONE: Skill fornita da `scf-master-codecrafter`.
+  > Disponibile solo se il pacchetto è installato nel workspace.
 - **Standard output accessibile** (struttura, NVDA, report):
   → `.github/skills/accessibility-output.skill.md`
 - **Verbosita comunicativa** (profili, cascata, regole):

@@ -90,10 +90,10 @@ All'avvio, prima di rispondere:
 
 ## Riferimenti Skills
 
-- **Output consultivo strutturato**: → `.github/skills/framework-query.skill.md`
+- **Output consultivo strutturato**: → `.github/skills/framework-query/SKILL.md`
 - Presentazione stile comunicativo (solo informativa):
   → `.github/skills/style-setup.skill.md`
-- **Panoramica framework**: → `.github/skills/framework-index.skill.md`
+- **Panoramica framework**: → `.github/skills/framework-index/SKILL.md`
 - **Selezione agente corretto**: → `.github/skills/agent-selector.skill.md`
 - **Limiti operativi read-only**: → `.github/skills/framework-scope-guard.skill.md`
 - **Standard output accessibile**: → `.github/skills/accessibility-output.skill.md`

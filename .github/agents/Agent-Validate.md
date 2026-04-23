@@ -95,10 +95,8 @@ Agent-Validate:
 
 ## Riferimenti Skills e Instructions
 
-- **Standard test** (coverage, markers, naming, CI-safe rules):
-  → `.github/instructions/tests.instructions.md` (attivo automaticamente su `tests/**/*.py`)
 - **Accessibilità componenti UI** (checklist WAI-ARIA + NVDA):
-  → `.github/skills/validate-accessibility.skill.md`
+  → `.github/skills/validate-accessibility/SKILL.md`
 - **Standard output accessibile** (struttura, NVDA, report):
   → `.github/skills/accessibility-output.skill.md`
 - **Verbosita comunicativa** (profili, cascata, regole):

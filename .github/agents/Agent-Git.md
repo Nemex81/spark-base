@@ -113,7 +113,7 @@ corrisponde vince):
    Analizza le modifiche per determinare tipo e scope del commit.
 
 3. Applica voce CHANGELOG seguendo:
-   → `.github/skills/changelog-entry.skill.md`
+  → `.github/skills/changelog-entry/SKILL.md`
    Crea CHANGELOG.md se assente (struttura base nella skill).
    Mostra la voce applicata nel formato:
    ```
@@ -293,7 +293,7 @@ Se N > 3 commit da revertire: fermarsi e chiedere istruzioni.
 - **Conventional Commits** (formato messaggi commit):
   → `.github/skills/conventional-commit.skill.md`
 - **Generazione voce CHANGELOG da diff**:
-  → `.github/skills/changelog-entry.skill.md`
+  → `.github/skills/changelog-entry/SKILL.md`
 - **Standard output accessibile** (struttura report):
   → `.github/skills/accessibility-output.skill.md`
 - **Protezione eliminazione file**:

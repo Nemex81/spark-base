@@ -10,6 +10,7 @@ framework_edit_mode: false
 scf_owner: "spark-base"
 spark: true
 framework_version: ""
+
 ---
 
 # Project Profile Template

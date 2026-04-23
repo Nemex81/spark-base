@@ -61,7 +61,9 @@ Personalita: `reviewer`.
 ## Riferimenti Skills
 
 - **Regole Clean Architecture** (layer, dipendenze, violazioni da cercare):
-  → `.github/skills/clean-architecture-rules.skill.md`
+  → `.github/skills/clean-architecture/SKILL.md`
+  > ATTENZIONE: Skill fornita da `scf-master-codecrafter`.
+  > Disponibile solo se il pacchetto è installato nel workspace.
 - **Standard output accessibile** (struttura, NVDA, report):
   → `.github/skills/accessibility-output.skill.md`
 - **Verbosita comunicativa** (profili, cascata, regole):

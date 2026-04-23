@@ -14,6 +14,15 @@ scf_merge_priority: 10
 
 ## [Unreleased]
 
+### Fixed
+
+- Corretti i riferimenti cross-package negli agenti base verso skill distribuite come directory (`clean-architecture`, `docs-manager`, `framework-index`, `framework-query`, `project-doc-bootstrap`, `validate-accessibility`, `changelog-entry`).
+- Rimossi i riferimenti rotti a `tests.instructions.md` e `project.instructions.md` dai flussi documentali base per allinearli agli asset realmente distribuiti nel layer `spark-base`.
+
+### Changed
+
+- Aggiunte note esplicite negli agenti base quando un riferimento rimanda a skill fornite da `scf-master-codecrafter` e disponibili solo se il pacchetto plugin e installato nel workspace.
+
 ## [1.4.0] - 2026-04-22
 
 ### Added
