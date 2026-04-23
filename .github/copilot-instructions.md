@@ -47,6 +47,13 @@ Quando il task tocca tool MCP o codice engine, mantieni separati `stdout` e `std
 - Agenti dispatcher base: analyze, plan, docs, validate.
 - Agenti plugin: dichiarano `plugin`, `capabilities`, `languages` e vengono scoperti via `AGENTS-{plugin-id}.md`.
 
+Nota cross-layer: alcuni agenti con prefisso `code-` (ad es. `code-Agent-Code`,
+`code-Agent-CodeRouter`, `code-Agent-CodeUI`, `code-Agent-Design`) sono forniti
+dal pacchetto `scf-master-codecrafter`. In un workspace dove `scf-master-codecrafter`
+non è installato, i riferimenti a questi agenti saranno link morti — questo è il
+comportamento atteso per agenti di layer superiore. Per comportamenti runtime
+corretti, installa `scf-master-codecrafter` o aggiorna i riferimenti locali.
+
 ## Output
 
 - Mantieni output testuale navigabile e NVDA-friendly.
