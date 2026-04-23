@@ -3,7 +3,7 @@ spark: true
 name: git-execution
 description: Lista tecnica dei comandi git autorizzati per contesto. Definisce cosa
   Copilot può eseguire tramite run_in_terminal e cosa deve invece proporre come testo
-  all'utente. Richiamabile da Agent-Git, Agent-Code e Agent-Orchestrator.
+  all'utente. Richiamabile da Agent-Git, code-Agent-Code e Agent-Orchestrator.
 ---
 
 # Skill: Git Execution
@@ -148,5 +148,5 @@ costruire il feedback finale all'utente.
 ## Agenti che usano questa skill
 
 - Agent-Git: logica operativa principale per operazioni git autorizzate
-- Agent-Code: per sapere cosa proporre dopo ogni fase implementativa
+- code-Agent-Code: per sapere cosa proporre dopo ogni fase implementativa
 - Agent-Orchestrator: per gestire i checkpoint git nel workflow E2E

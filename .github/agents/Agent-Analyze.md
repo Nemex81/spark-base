@@ -77,7 +77,7 @@ Personalita: `reviewer`.
 
 - Analisi completa (copertura breadth del codebase)
 - Domande di follow-up risolte
-- Pronto per Agent-Design o Agent-Plan (user confirm)
+- Pronto per code-Agent-Design o Agent-Plan (user confirm)
 
 ---
 
@@ -88,7 +88,7 @@ User: "Analizza l'architettura del timer system"
   -> Agent-Analyze legge ARCHITECTURE.md, src/application/game_engine.py, src/domain/models/game_end.py
   -> Report: "Timer gestito da GameEngine con 2 modalita (STRICT/PERMISSIVE),
              score penalty, override detection"
-  -> Suggerisce successivo: Agent-Design per refactor o Agent-Code per bugfix
+  -> Suggerisce successivo: code-Agent-Design per refactor o code-Agent-Code per bugfix
 ```
 
 ---

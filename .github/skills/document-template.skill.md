@@ -2,7 +2,7 @@
 spark: true
 name: document-template
 description: Regole di compilazione dei documenti DESIGN e PLAN del progetto. Richiamabile
-  da Agent-Design e Agent-Plan per garantire frontmatter YAML corretto, sezioni obbligatorie
+  da code-Agent-Design e Agent-Plan per garantire frontmatter YAML corretto, sezioni obbligatorie
   presenti e stati del ciclo di vita rispettati.
 ---
 
@@ -17,7 +17,7 @@ Frontmatter YAML richiesto:
 ```yaml
 ---
 feature: [nome feature]
-agent: Agent-Design
+agent: code-Agent-Design
 status: DRAFT
 version: vX.Y.Z
 date: YYYY-MM-DD
@@ -36,7 +36,7 @@ Diagrammi: solo testuali (ASCII o Mermaid semplice). Mai grafici.
 
 Ciclo di vita stati:
 
-- `DRAFT` → prodotto da Agent-Design, in attesa di review
+- `DRAFT` → prodotto da code-Agent-Design, in attesa di review
 - `REVIEWED` → confermato dall'utente, Agent-Plan può procedere
 
 ## PLAN_*.md — Struttura obbligatoria
@@ -67,7 +67,7 @@ Sezioni obbligatorie:
 Ciclo di vita stati:
 
 - `DRAFT` → prodotto da Agent-Plan, in attesa di review
-- `READY` → confermato dall'utente, Agent-Code può procedere
+- `READY` → confermato dall'utente, code-Agent-Code può procedere
 
 ## docs/5 - todolist/TODO_*.md — Struttura obbligatoria
 
@@ -75,11 +75,11 @@ Percorso: `docs/5 - todolist/TODO_<feature>_vX.Y.Z.md`
 
 - Link al PLAN di riferimento in testa al file
 - Checklist spuntabile per ogni fase (`[ ]` / `[x]`)
-- Istruzioni per Agent-Code (workflow incrementale)
-- Aggiornato immediatamente dopo ogni commit di Agent-Code
+- Istruzioni per code-Agent-Code (workflow incrementale)
+- Aggiornato immediatamente dopo ogni commit di code-Agent-Code
 
 Prodotto da: `Agent-Plan`
-Aggiornato da: `Agent-Code` (solo il file del task attivo)
+Aggiornato da: `code-Agent-Code` (solo il file del task attivo)
 
 ## docs/TODO.md — Ruolo (coordinatore persistente)
 

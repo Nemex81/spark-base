@@ -32,14 +32,14 @@ Personalita: `pragmatico`.
 ## Trigger Detection
 
 - "aggiorna docs" / "sync docs" / "changelog" / "api.md"
-- Input da: commits da Agent-Code + result da Agent-Validate
+- Input da: commits da code-Agent-Code + result da Agent-Validate
 
 ---
 
 ## Sync Strategy
 
 - **API.md**: User puo richiedere docstring extraction (opzionale), preferibilmente manuale
-- **ARCHITECTURE.md**: Auto-update se Agent-Design ha proposto refactor
+- **ARCHITECTURE.md**: Auto-update se code-Agent-Design ha proposto refactor
 - **CHANGELOG.md**: Semi-auto da commit messages convenzionali + semantic versioning
 - **Cross-reference Links**: Validation automatica (404 detection)
 
@@ -72,7 +72,7 @@ Stato: Pronto per release documentation
 ## Workflow Tipico
 
 ```
-Agent-Code ha completato feature X con 5 commits
+code-Agent-Code ha completato feature X con 5 commits
   |
 Agent-Docs:
   1. Analizza commit messages (feat/fix/refactor)

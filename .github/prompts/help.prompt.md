@@ -11,14 +11,14 @@ spark: true
 scf_owner: "spark-base"
 ---
 
-Spiega come funziona l'agente ${input:Nome agente (es: Agent-Code, Agent-Design...)}.
+Spiega come funziona l'agente ${input:Nome agente (es: code-Agent-Code, code-Agent-Design...)}.
 
-Se il file `.github/agents/${input:Nome agente (es: Agent-Code, Agent-Design...)}.md`
+Se il file `.github/agents/${input:Nome agente (es: code-Agent-Code, code-Agent-Design...)}.md`
 esiste nel workspace corrente, leggilo e produci una spiegazione strutturata.
 
 Se il file non esiste nel pacchetto base ma esiste in un pacchetto plugin installato,
 usa la definizione disponibile nel workspace installato e chiarisci che si tratta di
-un agente fornito da un pacchetto aggiuntivo.
+un agente fornito da un pacchetto aggiuntivo, ad esempio `scf-master-codecrafter`.
 
 Se il file non esiste in nessun pacchetto installato, interrompi e segnala che l'agente
 non è disponibile nel workspace corrente.

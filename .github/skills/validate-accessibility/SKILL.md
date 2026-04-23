@@ -2,7 +2,7 @@
 spark: true
 name: validate-accessibility
 description: Checklist accessibilità WAI-ARIA per componenti wxPython. Richiamabile
-  da Agent-Validate e Agent-Code per verificare che ogni componente UI sia navigabile
+  da Agent-Validate e code-Agent-Code per verificare che ogni componente UI sia navigabile
   da tastiera e compatibile con screen reader NVDA su Windows 11.
 ---
 

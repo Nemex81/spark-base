@@ -25,16 +25,16 @@ verificata o non viene accettata dal validator del frontmatter.
 |--------|-------------------------|
 | Agent-Orchestrator | ['GPT-5.4 (copilot)', 'Claude Opus 4.6 (copilot)'] |
 | Agent-Analyze | ['Claude Sonnet 4.6 (copilot)', 'GPT-5.4 (copilot)'] |
-| Agent-Design | ['Claude Opus 4.6 (copilot)', 'GPT-5.4 (copilot)'] |
+| code-Agent-Design | ['Claude Opus 4.6 (copilot)', 'GPT-5.4 (copilot)'] |
 | Agent-Plan | ['Claude Sonnet 4.6 (copilot)', 'GPT-5.4 (copilot)'] |
-| Agent-Code | ['Claude Sonnet 4.6 (copilot)', 'GPT-5.3-Codex (copilot)'] |
+| code-Agent-Code | ['Claude Sonnet 4.6 (copilot)', 'GPT-5.3-Codex (copilot)'] |
 | Agent-Validate | ['GPT-5.3-Codex (copilot)', 'Claude Sonnet 4.6 (copilot)'] |
 | Agent-Docs | ['GPT-5 mini (copilot)'] |
 | Agent-Release | ['GPT-5 mini (copilot)'] |
 | Agent-FrameworkDocs | ['Claude Sonnet 4.6 (copilot)', 'GPT-5 mini (copilot)'] |
 | Agent-Git | ['GPT-5 mini (copilot)', 'GPT-5.3-Codex (copilot)'] |
-| Agent-CodeRouter | ['Claude Sonnet 4.6 (copilot)', 'GPT-5.3-Codex (copilot)'] |
-| Agent-CodeUI | ['Claude Sonnet 4.6 (copilot)', 'GPT-5.3-Codex (copilot)'] |
+| code-Agent-CodeRouter | ['Claude Sonnet 4.6 (copilot)', 'GPT-5.3-Codex (copilot)'] |
+| code-Agent-CodeUI | ['Claude Sonnet 4.6 (copilot)', 'GPT-5.3-Codex (copilot)'] |
 
 ## Criteri di selezione per tipo di task
 

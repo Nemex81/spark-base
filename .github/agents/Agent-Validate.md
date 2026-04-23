@@ -36,7 +36,7 @@ Personalita: `reviewer`.
 ## Trigger Detection
 
 - "testa" / "valida" / "coverage" / "quali test mancano"
-- Input da: commits da Agent-Code
+- Input da: commits da code-Agent-Code
 
 ---
 

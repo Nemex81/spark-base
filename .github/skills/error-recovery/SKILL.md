@@ -69,9 +69,9 @@ La responsabilità passa all'utente.
 Fasi orchestrator in cui un subagente invocato potrebbe fallire:
 
 - Fase 1 (Agent-Analyze): fallimento analisi
-- Fase 2 (Agent-Design): fallimento syntax DESIGN doc
+- Fase 2 (code-Agent-Design): fallimento syntax DESIGN doc
 - Fase 3 (Agent-Plan): fallimento syntax PLAN doc
-- Fase 4 (Agent-CodeRouter): fallimento implementazione
+- Fase 4 (code-Agent-CodeRouter): fallimento implementazione
 - Fase 5 (Agent-Validate): fallimento test coverage
 - Fase 6 (Agent-Docs): fallimento sync documentazione
 

@@ -59,7 +59,7 @@ Personalita: `architect`.
 - **docs/5 - todolist/TODO_<feature>_vX.Y.Z.md** (creato per il task corrente)
   - Checklist spuntabile per ogni fase
   - Link al PLAN completo (fonte di verita)
-  - Istruzioni per Agent-Code (workflow incrementale)
+  - Istruzioni per code-Agent-Code (workflow incrementale)
 
 - **docs/TODO.md** (coordinatore persistente)
   - Aggiungere in append il link al nuovo TODO per-task creato
@@ -91,7 +91,7 @@ Personalita: `architect`.
 - docs/5 - todolist/TODO_<feature>_vX.Y.Z.md creato e pronto
 - docs/TODO.md aggiornato con il link al nuovo TODO per-task
 - User ha confermato priorita + versione target
-- Pronto per Agent-Code
+- Pronto per code-Agent-Code
 
 ---
 
@@ -112,7 +112,7 @@ Aggiorna docs/TODO.md: append link in sezione Tasks
   |
 User review + confirm versione
   |
-Agent-Code attende (pronto per Fase 1)
+code-Agent-Code attende (pronto per Fase 1)
 ```
 
 ---

@@ -1,7 +1,7 @@
 ---
 spark: true
 name: conventional-commit
-description: Regole Conventional Commits per il progetto. Richiamabile da Agent-Code,
+description: Regole Conventional Commits per il progetto. Richiamabile da code-Agent-Code,
   git-commit.prompt.md e git-merge.prompt.md per garantire commit atomici e coerenti.
 ---
 

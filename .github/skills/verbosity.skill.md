@@ -14,10 +14,10 @@ used_by:
 - Agent-Docs
 - Agent-Analyze
 - Agent-Plan
-- Agent-Design
+- code-Agent-Design
 - Agent-Validate
-- Agent-Code
-- Agent-CodeUI - Agent-CodeRouter
+- code-Agent-Code
+- code-Agent-CodeUI - code-Agent-CodeRouter
 - Agent-Release
 - Agent-Helper
 ---
