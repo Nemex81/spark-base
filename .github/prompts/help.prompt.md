@@ -13,8 +13,17 @@ scf_owner: "spark-base"
 
 Spiega come funziona l'agente ${input:Nome agente (es: Agent-Code, Agent-Design...)}.
 
-Leggi il file .github/agents/${input:Nome agente (es: Agent-Code, Agent-Design...)}.md
-e produci una spiegazione strutturata:
+Se il file `.github/agents/${input:Nome agente (es: Agent-Code, Agent-Design...)}.md`
+esiste nel workspace corrente, leggilo e produci una spiegazione strutturata.
+
+Se il file non esiste nel pacchetto base ma esiste in un pacchetto plugin installato,
+usa la definizione disponibile nel workspace installato e chiarisci che si tratta di
+un agente fornito da un pacchetto aggiuntivo.
+
+Se il file non esiste in nessun pacchetto installato, interrompi e segnala che l'agente
+non è disponibile nel workspace corrente.
+
+Produci sempre una spiegazione strutturata:
 
 1. Scopo principale (1 riga)
 2. Quando usarlo (trigger tipici)

@@ -14,7 +14,7 @@ scf_owner: "spark-base"
 
 # Framework Unlock
 
-Sei Agent-FrameworkDocs. Devi gestire una finestra temporanea e controllata
+Sei Agent-FrameworkDocs, agente condiviso del framework. Devi gestire una finestra temporanea e controllata
 per modificare componenti protetti del framework.
 
 Prima di qualsiasi scrittura, raccogli e conferma questi dati:

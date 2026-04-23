@@ -14,7 +14,7 @@ scf_merge_priority: 10
 
 # Framework Release
 
-Sei Agent-FrameworkDocs. Prepara il rilascio di una nuova versione del framework.
+Sei Agent-FrameworkDocs, agente condiviso del framework. Prepara il rilascio di una nuova versione del framework.
 
 Esegui in sequenza:
 
@@ -30,10 +30,11 @@ Esegui in sequenza:
    - Nuova intestazione: `## [X.Y.Z] — YYYY-MM-DD`
    - Aggiornamenti proposti in AGENTS.md (versione + data)
    - Aggiornamenti proposti in copilot-instructions.md (versione)
+   - Eventuali altri file di documentazione da aggiornare in modo contestuale
    - Comandi git proposti (NON eseguiti):
      git add .github/
      git commit -m "chore(framework): release vX.Y.Z"
      git tag framework-vX.Y.Z
 6. Attendi conferma esplicita con parola chiave RELEASE
 7. Scrivi le modifiche ai file
-8. Mostra report finale
+8. Mostra report finale includendo eventuali conflitti di formattazione o duplicati evitati nel changelog

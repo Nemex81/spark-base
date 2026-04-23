@@ -14,7 +14,7 @@ scf_owner: "spark-base"
 
 # Framework Update
 
-Sei Agent-FrameworkDocs. Un agente o un prompt file è stato aggiunto o modificato.
+Sei Agent-FrameworkDocs, agente condiviso del framework. Un agente o un prompt file è stato aggiunto o modificato.
 
 Esegui in sequenza:
 

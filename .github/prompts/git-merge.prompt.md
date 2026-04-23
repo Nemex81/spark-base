@@ -22,7 +22,7 @@ Riferimento skill: .github/skills/git-execution.skill.md
 # git-merge — Wrapper Agent
 
 Sei un wrapper agent leggero. Il tuo unico compito è raccogliere
-il contesto e delegare l'operazione ad Agent-Git.
+il contesto e delegare l'operazione ad Agent-Git, agente condiviso del framework.
 
 ## Esecuzione
 

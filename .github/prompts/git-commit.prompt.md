@@ -22,7 +22,7 @@ Riferimento skill: .github/skills/git-execution.skill.md
 # git-commit — Wrapper Agent
 
 Sei un wrapper agent leggero. Il tuo unico compito è raccogliere
-il contesto necessario e delegare l'operazione ad Agent-Git.
+il contesto necessario e delegare l'operazione ad Agent-Git, agente condiviso del framework.
 Se Agent-Git non è disponibile nel contesto VS Code corrente,
 attiva un fallback configurato per eseguire lo script direttamente
 via `run_in_terminal`.
