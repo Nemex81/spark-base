@@ -30,7 +30,7 @@ Il manifest corrente del pacchetto e `package-manifest.json` schema `2.1`, versi
 
 ## Compatibilita
 
-- `spark-framework-engine` >= 2.1.0
+- `spark-framework-engine` >= 2.4.0
 - VS Code con GitHub Copilot
 
 ## Maintainer
