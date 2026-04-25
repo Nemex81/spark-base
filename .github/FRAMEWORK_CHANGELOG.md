@@ -12,6 +12,10 @@ scf_protected: false
 
 ## [2026-04-24]
 
+### MSI cleanup
+
+- Rimossi i duplicati legacy `-MSI` e `-MSI-2` residui sotto `.github/` per consolidare i componenti canonici del framework e ridurre il debt di manutenzione senza cambiare il comportamento operativo.
+
 ### Framework unlock
 
 - Framework unlock usato per riallineare i riferimenti documentali all'engine `spark-framework-engine >= 2.4.0` nei file protetti `copilot-instructions.md` e `AGENTS.md`, con ripristino del flag `framework_edit_mode: false` al termine del batch.
