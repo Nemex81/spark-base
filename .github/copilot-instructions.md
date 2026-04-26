@@ -1,7 +1,7 @@
 ---
 spark: true
 scf_file_role: "config"
-scf_version: "1.4.0"
+scf_version: "1.5.0"
 scf_merge_strategy: "merge_sections"
 scf_protected: false
 scf_owner: "spark-base"
@@ -20,9 +20,11 @@ riutilizzabili da tutti i plugin linguaggio-specifici.
 
 - Leggi sempre `.github/project-profile.md` prima di assumere stack o architettura.
 - Usa `.github/AGENTS.md` come indice canonico degli agenti installati.
-- Se una capability richiesta non e coperta da plugin attivi, delega ad Agent-Research.
+- Se una capability richiesta non è coperta da plugin attivi, usa `scf://agents-index`
+	per verificare gli agenti disponibili, poi delega all'agente ricerca installato.
 - Non modificare `.github/runtime/` tramite sistemi di manifest o ownership package.
-- Per operazioni git, usa Agent-Git o proponi i comandi senza eseguirli direttamente.
+- Per operazioni git, proponi i comandi senza eseguirli direttamente;
+	delega all'agente git installato tramite `scf://agents-index`.
 - Le capability language-specific devono essere fornite dai plugin installati sopra `spark-base`.
 
 ## Runtime MCP richiesto
