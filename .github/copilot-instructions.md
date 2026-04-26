@@ -43,19 +43,92 @@ Quando il task tocca tool MCP o codice engine, mantieni separati `stdout` e `std
 
 ## Routing degli agenti
 
-- Agenti executor base: orchestrazione, git, release, framework docs, onboarding, ricerca.
-- Agenti dispatcher base: analyze, plan, docs, validate.
-- Agenti plugin: dichiarano `plugin`, `capabilities`, `languages` e vengono scoperti via `AGENTS-{plugin-id}.md`.
+- `@spark-assistant` — operazioni workspace: bootstrap, install/update/remove
+	pacchetti, diagnostica stato framework.
+- `@spark-engine-maintainer` — manutenzione motore: audit coerenza engine,
+	aggiunta/rimozione tool MCP, revisione prompt, checklist pre-release.
+- `@spark-guide` — orientamento: quale agente usare, quale pacchetto installare,
+	routing verso spark-assistant per operazioni operative.
 
-Nota cross-layer: alcuni agenti con prefisso `code-` (ad es. `code-Agent-Code`,
-`code-Agent-CodeRouter`, `code-Agent-CodeUI`, `code-Agent-Design`) sono forniti
-dal pacchetto `scf-master-codecrafter`. In un workspace dove `scf-master-codecrafter`
-non è installato, i riferimenti a questi agenti saranno link morti — questo è il
-comportamento atteso per agenti di layer superiore. Per comportamenti runtime
-corretti, installa `scf-master-codecrafter` o aggiorna i riferimenti locali.
+Gli agenti plugin (language-specific) vengono scoperti dinamicamente via
+`scf://agents-index` che aggrega `AGENTS.md` e tutti i file `AGENTS-{plugin-id}.md`
+presenti in `.github/`. Non referenziare agenti plugin per nome in questo file.
 
 ## Output
 
 - Mantieni output testuale navigabile e NVDA-friendly.
 - Usa il prefisso `ERRORE:` per blocchi critici.
 - Preferisci report brevi con cosa cambia, perche e impatto operativo.
+
+## Tool MCP SPARK — Guida Operativa
+
+Quando il server MCP SPARK è attivo, usa i tool seguenti invece di leggere
+file direttamente o modificare `.github/` a mano.
+
+### Lettura risorse framework
+
+- Leggere stato runtime:
+	→ `scf_get_runtime_state()`  oppure resource `scf://runtime-state`
+- Leggere indice agenti installati:
+	→ resource `scf://agents-index`
+- Leggere un agente specifico:
+	→ resource `agents://{nome-file-agente}`  (es. `agents://spark-assistant`)
+- Leggere una skill specifica:
+	→ resource `skills://{nome-skill}`  (es. `skills://conventional-commit`)
+- Leggere un prompt specifico:
+	→ resource `prompts://{nome-prompt}`
+- Leggere una instruction specifica:
+	→ resource `instructions://{nome-instruction}`
+- Stato pacchetti installati:
+	→ `scf_list_packages()`  oppure resource `scf://packages`
+- Pacchetti disponibili nel registry:
+	→ `scf_list_available_packages()`  oppure resource `scf://registry`
+
+### Operazioni workspace
+
+- Bootstrap workspace nuovo (prima installazione):
+	→ `scf_bootstrap_workspace()`
+	Sentinella di idempotenza: `.github/agents/spark-assistant.agent.md`
+	Se la sentinella esiste, il bootstrap non sovrascrive file utente modificati.
+
+- Installare un pacchetto:
+	→ `scf_install_package(package_id)`
+	Dopo l'esecuzione: il motore aggiorna automaticamente `copilot-instructions.md`
+	aggiungendo il blocco `SCF:BEGIN:{package_id}` con `merge_sections`.
+
+- Aggiornare un pacchetto:
+	→ `scf_update_package(package_id)`
+	Dopo l'esecuzione: il motore riscrive il blocco `SCF:BEGIN:{package_id}` esistente
+	preservando i blocchi degli altri owner e il testo utente fuori dai marker.
+
+- Rimuovere un pacchetto:
+	→ `scf_remove_package(package_id)`
+	Dopo l'esecuzione: il motore elimina il blocco `SCF:BEGIN:{package_id}` dal file.
+
+- Verificare aggiornamenti disponibili:
+	→ `scf_check_updates()`
+
+- Leggere policy di update del workspace:
+	→ `scf_get_update_policy()`
+
+- Modificare policy di update:
+	→ `scf_set_update_policy(mode)`  dove mode è: `"auto"` | `"confirm"` | `"manual"`
+
+### Autorizzazione scritture su `.github/`
+
+Prima di qualsiasi scrittura sotto `.github/`, verifica:
+→ `scf_get_runtime_state()` → campo `github_write_authorized`
+
+Se il campo è `false`, esegui:
+→ `scf_update_runtime_state({"github_write_authorized": true})`
+
+Non modificare `.github/runtime/orchestrator-state.json` direttamente.
+
+### Regola invariante sul file `copilot-instructions.md`
+
+Questo file è gestito con `scf_merge_strategy: merge_sections`.
+Ogni blocco delimitato da `SCF:BEGIN:{owner}` / `SCF:END:{owner}` è di
+proprietà esclusiva del pacchetto dichiarato nell'owner.
+Il testo fuori dai marker è dello sviluppatore: il motore non lo tocca mai.
+Non scrivere mai direttamente dentro un blocco di un altro owner.
+Non generare blocchi SCF a mano: usa i tool engine sopra.
