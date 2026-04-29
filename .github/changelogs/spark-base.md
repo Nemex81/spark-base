@@ -23,6 +23,12 @@ scf_merge_priority: 10
 
 - Aggiunte note esplicite negli agenti base quando un riferimento rimanda a skill fornite da `scf-master-codecrafter` e disponibili solo se il pacchetto plugin e installato nel workspace.
 
+## [1.6.1] - 2026-04-28
+
+### Changed
+
+- Bump patch di compatibilita: `min_engine_version` aggiornata a `3.1.0` senza modifiche funzionali al payload del pacchetto.
+
 ## [1.4.0] - 2026-04-22
 
 ### Added

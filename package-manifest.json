@@ -1,7 +1,7 @@
 {
   "schema_version": "3.0",
   "package": "spark-base",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "display_name": "SPARK Base Layer",
   "description": "Layer fondazionale SCF con agenti base, skill condivise, instruction comuni e prompt framework general-purpose.",
   "author": "Nemex81",
