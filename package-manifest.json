@@ -1,7 +1,7 @@
 {
   "schema_version": "3.0",
   "package": "spark-base",
-  "version": "1.7.1",
+  "version": "1.7.3",
   "display_name": "SPARK Base Layer",
   "description": "Layer fondazionale SCF con agenti base, skill condivise, instruction comuni e prompt framework general-purpose.",
   "author": "Nemex81",
@@ -192,7 +192,7 @@
     {
       "path": ".github/AGENTS.md",
       "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
+      "scf_version": "1.2.0",
       "scf_file_role": "config",
       "scf_merge_strategy": "replace",
       "scf_merge_priority": 10,
@@ -273,7 +273,7 @@
     {
       "path": ".github/agents/Agent-Research.md",
       "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
+      "scf_version": "1.2.0",
       "scf_file_role": "agent",
       "scf_merge_strategy": "replace",
       "scf_merge_priority": 10,
@@ -309,7 +309,7 @@
     {
       "path": ".github/agents/spark-guide.agent.md",
       "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
+      "scf_version": "1.2.0",
       "scf_file_role": "agent",
       "scf_merge_strategy": "replace",
       "scf_merge_priority": 10,
@@ -327,7 +327,7 @@
     {
       "path": ".github/copilot-instructions.md",
       "scf_owner": "spark-base",
-      "scf_version": "1.4.0",
+      "scf_version": "1.5.0",
       "scf_file_role": "config",
       "scf_merge_strategy": "merge_sections",
       "scf_merge_priority": 10,
@@ -408,7 +408,7 @@
     {
       "path": ".github/project-profile.md",
       "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
+      "scf_version": "1.2.0",
       "scf_file_role": "config",
       "scf_merge_strategy": "user_protected",
       "scf_merge_priority": 10,
@@ -417,7 +417,7 @@
     {
       "path": ".github/prompts/framework-changelog.prompt.md",
       "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
+      "scf_version": "1.2.0",
       "scf_file_role": "prompt",
       "scf_merge_strategy": "replace",
       "scf_merge_priority": 10,
@@ -426,7 +426,7 @@
     {
       "path": ".github/prompts/framework-release.prompt.md",
       "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
+      "scf_version": "1.2.0",
       "scf_file_role": "prompt",
       "scf_merge_strategy": "replace",
       "scf_merge_priority": 10,
@@ -435,7 +435,7 @@
     {
       "path": ".github/prompts/framework-unlock.prompt.md",
       "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
+      "scf_version": "1.2.0",
       "scf_file_role": "prompt",
       "scf_merge_strategy": "replace",
       "scf_merge_priority": 10,
@@ -444,7 +444,7 @@
     {
       "path": ".github/prompts/framework-update.prompt.md",
       "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
+      "scf_version": "1.2.0",
       "scf_file_role": "prompt",
       "scf_merge_strategy": "replace",
       "scf_merge_priority": 10,
@@ -453,7 +453,7 @@
     {
       "path": ".github/prompts/git-commit.prompt.md",
       "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
+      "scf_version": "1.2.0",
       "scf_file_role": "prompt",
       "scf_merge_strategy": "replace",
       "scf_merge_priority": 10,
@@ -462,7 +462,7 @@
     {
       "path": ".github/prompts/git-merge.prompt.md",
       "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
+      "scf_version": "1.2.0",
       "scf_file_role": "prompt",
       "scf_merge_strategy": "replace",
       "scf_merge_priority": 10,
@@ -471,7 +471,7 @@
     {
       "path": ".github/prompts/help.prompt.md",
       "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
+      "scf_version": "1.2.0",
       "scf_file_role": "prompt",
       "scf_merge_strategy": "replace",
       "scf_merge_priority": 10,
@@ -480,7 +480,7 @@
     {
       "path": ".github/prompts/init.prompt.md",
       "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
+      "scf_version": "1.2.0",
       "scf_file_role": "prompt",
       "scf_merge_strategy": "replace",
       "scf_merge_priority": 10,
@@ -489,7 +489,7 @@
     {
       "path": ".github/prompts/orchestrate.prompt.md",
       "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
+      "scf_version": "1.2.0",
       "scf_file_role": "prompt",
       "scf_merge_strategy": "replace",
       "scf_merge_priority": 10,
@@ -498,7 +498,7 @@
     {
       "path": ".github/prompts/personality.prompt.md",
       "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
+      "scf_version": "1.2.0",
       "scf_file_role": "prompt",
       "scf_merge_strategy": "replace",
       "scf_merge_priority": 10,
@@ -507,7 +507,7 @@
     {
       "path": ".github/prompts/project-setup.prompt.md",
       "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
+      "scf_version": "1.2.0",
       "scf_file_role": "prompt",
       "scf_merge_strategy": "replace",
       "scf_merge_priority": 10,
@@ -516,7 +516,7 @@
     {
       "path": ".github/prompts/project-update.prompt.md",
       "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
+      "scf_version": "1.2.0",
       "scf_file_role": "prompt",
       "scf_merge_strategy": "replace",
       "scf_merge_priority": 10,
@@ -525,7 +525,7 @@
     {
       "path": ".github/prompts/README.md",
       "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
+      "scf_version": "1.2.0",
       "scf_file_role": "prompt",
       "scf_merge_strategy": "replace",
       "scf_merge_priority": 10,
@@ -534,7 +534,7 @@
     {
       "path": ".github/prompts/release.prompt.md",
       "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
+      "scf_version": "1.2.0",
       "scf_file_role": "prompt",
       "scf_merge_strategy": "replace",
       "scf_merge_priority": 10,
@@ -561,7 +561,7 @@
     {
       "path": ".github/prompts/scf-list-available.prompt.md",
       "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
+      "scf_version": "1.2.0",
       "scf_file_role": "prompt",
       "scf_merge_strategy": "replace",
       "scf_merge_priority": 10,
@@ -597,7 +597,7 @@
     {
       "path": ".github/prompts/scf-pre-implementation-audit.prompt.md",
       "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
+      "scf_version": "1.2.0",
       "scf_file_role": "prompt",
       "scf_merge_strategy": "replace",
       "scf_merge_priority": 10,
@@ -624,7 +624,7 @@
     {
       "path": ".github/prompts/scf-update-policy.prompt.md",
       "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
+      "scf_version": "1.2.0",
       "scf_file_role": "prompt",
       "scf_merge_strategy": "replace",
       "scf_merge_priority": 10,
@@ -633,7 +633,7 @@
     {
       "path": ".github/prompts/scf-update.prompt.md",
       "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
+      "scf_version": "1.3.1",
       "scf_file_role": "prompt",
       "scf_merge_strategy": "replace",
       "scf_merge_priority": 10,
@@ -660,7 +660,7 @@
     {
       "path": ".github/prompts/start.prompt.md",
       "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
+      "scf_version": "1.2.0",
       "scf_file_role": "prompt",
       "scf_merge_strategy": "replace",
       "scf_merge_priority": 10,
@@ -669,7 +669,7 @@
     {
       "path": ".github/prompts/status.prompt.md",
       "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
+      "scf_version": "1.2.0",
       "scf_file_role": "prompt",
       "scf_merge_strategy": "replace",
       "scf_merge_priority": 10,
@@ -678,7 +678,7 @@
     {
       "path": ".github/prompts/sync-docs.prompt.md",
       "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
+      "scf_version": "1.2.0",
       "scf_file_role": "prompt",
       "scf_merge_strategy": "replace",
       "scf_merge_priority": 10,
@@ -687,7 +687,7 @@
     {
       "path": ".github/prompts/verbosity.prompt.md",
       "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
+      "scf_version": "1.2.0",
       "scf_file_role": "prompt",
       "scf_merge_strategy": "replace",
       "scf_merge_priority": 10,
@@ -705,7 +705,7 @@
     {
       "path": ".github/skills/agent-selector.skill.md",
       "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
+      "scf_version": "1.2.0",
       "scf_file_role": "skill",
       "scf_merge_strategy": "replace",
       "scf_merge_priority": 10,
@@ -822,7 +822,7 @@
     {
       "path": ".github/skills/project-doc-bootstrap/templates/doc-structure.md",
       "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
+      "scf_version": "1.2.0",
       "scf_file_role": "skill",
       "scf_merge_strategy": "replace",
       "scf_merge_priority": 10,
