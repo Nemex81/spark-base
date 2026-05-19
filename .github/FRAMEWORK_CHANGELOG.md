@@ -10,6 +10,17 @@ scf_protected: false
 
 # Framework Changelog
 
+## [2026-05-19]
+
+### Migrazione agenti multi-repo (spark-base 2.3.0 / spark-ops 1.4.0 / registry)
+
+- Agent-Git e Agent-Welcome migrati da spark-base v2.2.0 a spark-ops v1.4.0.
+- Agent-Release rimosso da spark-ops (errata classificazione): resta esclusivamente in spark-base.
+- spark-assistant.agent.md e spark-guide.agent.md rimossi da spark-base (workspace agent nativi di spark-ops v1.3.0+).
+- spark-base bumped: 2.2.0 → 2.3.0. spark-ops bumped: 1.3.0 → 1.4.0.
+- Registry aggiornato: spark-base 2.3.0, spark-ops 1.4.0, spark-ops repo_url corretto verso spark-framework-engine.
+- SHA spark-base: 6c0498f (main). SHA spark-ops/ENGINE: 20be743 (workspace-slim-registry-sync-20260511).
+
 ## [2026-04-24]
 
 ### MSI cleanup
