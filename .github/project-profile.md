@@ -6,7 +6,7 @@ scf_merge_priority: 10
 scf_merge_strategy: "user_protected"
 active_plugins: []
 scf_version: "1.2.0"
-framework_edit_mode: false
+framework_edit_mode: true
 scf_owner: "spark-base"
 spark: true
 framework_version: ""
