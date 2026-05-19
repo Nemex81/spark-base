@@ -23,6 +23,12 @@ scf_merge_priority: 10
 
 - Aggiunte note esplicite negli agenti base quando un riferimento rimanda a skill fornite da `scf-master-codecrafter` e disponibili solo se il pacchetto plugin e installato nel workspace.
 
+## [2.3.1] — 2026-05-19
+
+### Removed
+
+- Agent-FrameworkDocs.md: rimosso da spark-base, risorsa nativa di spark-ops v1.4.0 (omissione del ciclo di migrazione precedente)
+
 ## [2.3.0] — 2026-05-19
 
 ### Removed
