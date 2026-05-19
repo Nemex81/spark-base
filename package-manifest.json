@@ -1,7 +1,7 @@
 {
-  "schema_version": "3.0",
+  "schema_version": "3.1",
   "package": "spark-base",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "display_name": "SPARK Base Layer",
   "description": "Layer fondazionale SCF con agenti base, skill condivise, instruction comuni e prompt framework general-purpose.",
   "author": "Nemex81",
@@ -45,19 +45,6 @@
       "personality",
       "project-setup",
       "project-update",
-      "scf-check-updates",
-      "scf-install",
-      "scf-list-available",
-      "scf-list-installed",
-      "scf-migrate-workspace",
-      "scf-package-info",
-      "scf-pre-implementation-audit",
-      "scf-remove",
-      "scf-status",
-      "scf-update",
-      "scf-update-batch",
-      "scf-update-policy",
-      "scf-update-single",
       "start",
       "status",
       "sync-docs",
@@ -81,10 +68,8 @@
       "project-profile",
       "project-reset",
       "rollback-procedure",
-      "semantic-gate",
       "semver-bump",
       "style-setup",
-      "task-scope-guard",
       "validate-accessibility",
       "verbosity"
     ],
@@ -131,19 +116,6 @@
     ".github/prompts/project-setup.prompt.md",
     ".github/prompts/project-update.prompt.md",
     ".github/prompts/README.md",
-    ".github/prompts/scf-check-updates.prompt.md",
-    ".github/prompts/scf-install.prompt.md",
-    ".github/prompts/scf-list-available.prompt.md",
-    ".github/prompts/scf-list-installed.prompt.md",
-    ".github/prompts/scf-migrate-workspace.prompt.md",
-    ".github/prompts/scf-package-info.prompt.md",
-    ".github/prompts/scf-pre-implementation-audit.prompt.md",
-    ".github/prompts/scf-remove.prompt.md",
-    ".github/prompts/scf-status.prompt.md",
-    ".github/prompts/scf-update-batch.prompt.md",
-    ".github/prompts/scf-update-policy.prompt.md",
-    ".github/prompts/scf-update-single.prompt.md",
-    ".github/prompts/scf-update.prompt.md",
     ".github/prompts/start.prompt.md",
     ".github/prompts/status.prompt.md",
     ".github/prompts/sync-docs.prompt.md",
@@ -166,10 +138,8 @@
     ".github/skills/project-profile.skill.md",
     ".github/skills/project-reset.skill.md",
     ".github/skills/rollback-procedure.skill.md",
-    ".github/skills/semantic-gate.skill.md",
     ".github/skills/semver-bump.skill.md",
     ".github/skills/style-setup.skill.md",
-    ".github/skills/task-scope-guard.skill.md",
     ".github/skills/validate-accessibility/SKILL.md",
     ".github/skills/verbosity.skill.md"
   ],
@@ -454,123 +424,6 @@
       "scf_protected": false
     },
     {
-      "path": ".github/prompts/scf-check-updates.prompt.md",
-      "scf_owner": "spark-base",
-      "scf_version": "1.2.1",
-      "scf_file_role": "prompt",
-      "scf_merge_strategy": "replace",
-      "scf_merge_priority": 10,
-      "scf_protected": false
-    },
-    {
-      "path": ".github/prompts/scf-install.prompt.md",
-      "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
-      "scf_file_role": "prompt",
-      "scf_merge_strategy": "replace",
-      "scf_merge_priority": 10,
-      "scf_protected": false
-    },
-    {
-      "path": ".github/prompts/scf-list-available.prompt.md",
-      "scf_owner": "spark-base",
-      "scf_version": "1.2.0",
-      "scf_file_role": "prompt",
-      "scf_merge_strategy": "replace",
-      "scf_merge_priority": 10,
-      "scf_protected": false
-    },
-    {
-      "path": ".github/prompts/scf-list-installed.prompt.md",
-      "scf_owner": "spark-base",
-      "scf_version": "1.2.1",
-      "scf_file_role": "prompt",
-      "scf_merge_strategy": "replace",
-      "scf_merge_priority": 10,
-      "scf_protected": false
-    },
-    {
-      "path": ".github/prompts/scf-migrate-workspace.prompt.md",
-      "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
-      "scf_file_role": "prompt",
-      "scf_merge_strategy": "replace",
-      "scf_merge_priority": 10,
-      "scf_protected": false
-    },
-    {
-      "path": ".github/prompts/scf-package-info.prompt.md",
-      "scf_owner": "spark-base",
-      "scf_version": "1.2.1",
-      "scf_file_role": "prompt",
-      "scf_merge_strategy": "replace",
-      "scf_merge_priority": 10,
-      "scf_protected": false
-    },
-    {
-      "path": ".github/prompts/scf-pre-implementation-audit.prompt.md",
-      "scf_owner": "spark-base",
-      "scf_version": "1.2.0",
-      "scf_file_role": "prompt",
-      "scf_merge_strategy": "replace",
-      "scf_merge_priority": 10,
-      "scf_protected": false
-    },
-    {
-      "path": ".github/prompts/scf-remove.prompt.md",
-      "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
-      "scf_file_role": "prompt",
-      "scf_merge_strategy": "replace",
-      "scf_merge_priority": 10,
-      "scf_protected": false
-    },
-    {
-      "path": ".github/prompts/scf-status.prompt.md",
-      "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
-      "scf_file_role": "prompt",
-      "scf_merge_strategy": "replace",
-      "scf_merge_priority": 10,
-      "scf_protected": false
-    },
-    {
-      "path": ".github/prompts/scf-update-policy.prompt.md",
-      "scf_owner": "spark-base",
-      "scf_version": "1.2.0",
-      "scf_file_role": "prompt",
-      "scf_merge_strategy": "replace",
-      "scf_merge_priority": 10,
-      "scf_protected": false
-    },
-    {
-      "path": ".github/prompts/scf-update.prompt.md",
-      "scf_owner": "spark-base",
-      "scf_version": "1.3.1",
-      "scf_file_role": "prompt",
-      "scf_merge_strategy": "replace",
-      "scf_merge_priority": 10,
-      "scf_protected": false
-    },
-    {
-      "path": ".github/prompts/scf-update-batch.prompt.md",
-      "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
-      "scf_file_role": "prompt",
-      "scf_merge_strategy": "replace",
-      "scf_merge_priority": 10,
-      "scf_protected": false
-    },
-    {
-      "path": ".github/prompts/scf-update-single.prompt.md",
-      "scf_owner": "spark-base",
-      "scf_version": "1.3.0",
-      "scf_file_role": "prompt",
-      "scf_merge_strategy": "replace",
-      "scf_merge_priority": 10,
-      "scf_protected": false
-    },
-    {
       "path": ".github/prompts/start.prompt.md",
       "scf_owner": "spark-base",
       "scf_version": "1.2.0",
@@ -769,15 +622,6 @@
       "scf_protected": false
     },
     {
-      "path": ".github/skills/semantic-gate.skill.md",
-      "scf_owner": "spark-base",
-      "scf_version": "engine-managed",
-      "scf_file_role": "skill",
-      "scf_merge_strategy": "replace",
-      "scf_merge_priority": 10,
-      "scf_protected": false
-    },
-    {
       "path": ".github/skills/semver-bump.skill.md",
       "scf_owner": "spark-base",
       "scf_version": "engine-managed",
@@ -788,15 +632,6 @@
     },
     {
       "path": ".github/skills/style-setup.skill.md",
-      "scf_owner": "spark-base",
-      "scf_version": "engine-managed",
-      "scf_file_role": "skill",
-      "scf_merge_strategy": "replace",
-      "scf_merge_priority": 10,
-      "scf_protected": false
-    },
-    {
-      "path": ".github/skills/task-scope-guard.skill.md",
       "scf_owner": "spark-base",
       "scf_version": "engine-managed",
       "scf_file_role": "skill",
@@ -837,10 +672,8 @@
     "git-execution",
     "personality",
     "rollback-procedure",
-    "semantic-gate",
     "semver-bump",
     "style-setup",
-    "task-scope-guard",
     "validate-accessibility",
     "verbosity"
   ],
